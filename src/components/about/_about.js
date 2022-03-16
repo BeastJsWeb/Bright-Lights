@@ -5,6 +5,9 @@ import group202 from '../../images/group2/02.png'
 import group203 from '../../images/group2/03.svg'
 import AboutSongImg from "./aboutSongImg";
 import AboutSongText from "./aboutSongText/aboutSongText";
+import AboutArtist from "./aboutArtist";
+import group1Text01 from '../../images/group2/text/01.jpg';
+import group2Text02 from '../../images/group2/text/02.jpg';
 
 const iconTitleAboutSong = [
   'Based in: Los Angeles',
@@ -46,6 +49,17 @@ const About = () => {
       iconTitleAboutSong={iconTitleAboutSong}
       />
       <AboutSongImg img={group202} />
+      <AboutArtist
+      textAboutArtist='
+        “In an age where mainstream music is designed to be as
+        easily consumed as possible, listening to Bright Lights is
+        refreshing, to say the least. Her sound is perfect for radio
+        but complex enough to separate her from other pop newcomers.”
+        '
+      linkSiteText='PopULove.net'
+      img={group2Text02}
+      bgImg={group1Text01}
+      />
     </Grid>
   )
 }

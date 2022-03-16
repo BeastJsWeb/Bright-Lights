@@ -4,9 +4,9 @@ import { Slider, Box, IconButton, Typography } from '@mui/material';
 import { PauseRounded, PlayArrowRounded } from '@mui/icons-material';
 import { styled } from "@mui/system";
 
-const MySlider = styled(Slider) (() => `
+const MySlider = styled(Slider) (({width}) => `
   color: #7A66CC;
-  width: calc(7em + 40vw);
+  width: ${width};
 
   & .MuiSlider-rail {
     color: white;
@@ -22,7 +22,7 @@ const MySlider = styled(Slider) (() => `
   `
 )
 
-const Player = () => {
+const Player = ({ width, marginBottom = 'calc(1em + 0.8vw)', marginTop = 'calc(1em + 0.5vw)' }) => {
   const [paused, setPaused] = React.useState(false); 
 
   return (
@@ -33,8 +33,8 @@ const Player = () => {
           display: 'flex', 
           justifyContent: 'space-between', 
           alignItems: 'center',
-          marginBottom: 'calc(1em + 5vw)',
-          marginTop: 'calc(1em + 0.5vw)'
+          marginBottom: {marginBottom},
+          marginTop: {marginTop}
         }}
         >
         <IconButton 
@@ -49,6 +49,7 @@ const Player = () => {
         </IconButton>
         <MySlider
           size="small"
+          width={width}
           aria-label="time-indicator"
           min={0}
           step={1}
@@ -64,7 +65,7 @@ const Player = () => {
           display='flex'
           gap={1}
           color="white"
-          fontSize='calc(1em + 0.2vw)'
+          fontSize='calc(0.7em + 0.3vw)'
           fontWeight={500}
           fontFamily='Poppins'
           >

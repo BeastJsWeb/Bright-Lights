@@ -3,6 +3,7 @@ import { Container } from "@mui/material";
 import Header from "../app-header/_header";
 import News from "../news/_news";
 import About from "../about/_about";
+import Music from "../music/_music";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       >
         <News/>
         <About/>
+        <Music/>
       </Container>
     </>
   )

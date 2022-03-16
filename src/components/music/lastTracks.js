@@ -1,0 +1,36 @@
+import React from "react";
+import { Box, Typography } from "@mui/material";
+
+const LastTracks = ({ lastSongs }) => {
+  return (
+    <>
+      {lastSongs.map((song, i) => (
+      <Box 
+      display='inline-flex' 
+      alignItems='baseline' 
+      columnGap='calc(0.7em + 0.5vw)' 
+      >
+        <Typography
+        color='silver'
+        fontSize='calc(0.8em + 0vw)'
+        fontFamily='Poppins'
+        >
+          0{i+1}
+        </Typography>
+        <Typography
+        color='white'
+        fontSize='calc(0.8em + 0.25vw)'
+        lineHeight='27px'
+        fontFamily='Poppins'
+        minWidth='calc(15em + 4vw)'
+        sx={{ paddingBottom: 'calc(0.5em + 0.6vw)' }}
+        >
+          {song}
+        </Typography>
+      </Box>
+      ))}
+    </>
+  )
+}
+
+export default LastTracks

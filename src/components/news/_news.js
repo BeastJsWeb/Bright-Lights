@@ -19,8 +19,10 @@ const News = () => {
       mainTitle='War For Love'
       subTitle='New Single'
       />
-      <Player/>
-
+      <Player 
+      width='calc(7em + 40vw)'
+      marginBottom='calc(1em + 5vw)'
+      />
       <Grid container
       overflow='hidden'
       >

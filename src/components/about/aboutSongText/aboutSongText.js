@@ -1,31 +1,22 @@
 import React from "react";
 import Hashtag from "./hashtag";
-import { Grid, Stack, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+import TitleAbout from "./titleAbout";
 
 const AboutSongText = ({ titleIcon, title, textAboutSong, iconAboutSong, iconTitleAboutSong }) => {
   return (
     <Grid item 
     lg={6} xs={12}
     >
-      <Stack direction='row' spacing={4}>
-        <img
-        alt="about"
-        src={titleIcon}
-        />
-        <Typography
-        color='white'
-        fontFamily='Poppins'
-        fontWeight={700}
-        sx={{fontSize: 'calc(1em + 1.6vw)'}}
-        >
-          {title}
-        </Typography>
-      </Stack>
-
+      <TitleAbout
+      titleIcon={titleIcon}
+      title={title}
+      />
       <Typography
       color='white'
       sx={{
         fontFamily: 'Poppins',
+        fontSize: 'calc(0.8em + 0.17vw)',
         opacity: '0.7', 
         marginTop: 'calc(1em + 2.5vw)', 
         marginBottom: 'calc(1em + 2.2vw)',
