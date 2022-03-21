@@ -18,7 +18,7 @@ const NavMenu = ({headerPages, openNavMenu, closeNavMenu, openNavMenuCheck}) => 
       mb: 2 
     }}
     >
-      <IconButton
+      <IconButton active
       size="large"
       aria-controls="menu-appbar"
       aria-haspopup="listbox"
@@ -37,12 +37,21 @@ const NavMenu = ({headerPages, openNavMenu, closeNavMenu, openNavMenuCheck}) => 
             backgroundColor: "transparent",
             color: "white",
             top: '70px',
-            boxShadow: 'none'
+            boxShadow: 'none',
+            height: 'auto',
+            pr: 2
           }
         }}
         >
-          {headerPages.map((page) => (
-            <MenuItem key={page} onClick={closeNavMenu}>
+          {headerPages.map(page => (
+            <MenuItem key={page} onClick={closeNavMenu}
+            sx={{
+              '&:hover > *' : {
+                opacity: 0.7,
+                transform: `translate(5%, 0)`
+              }
+            }} 
+            >
               <Typography
               variant="h4"
               textAlign="center"

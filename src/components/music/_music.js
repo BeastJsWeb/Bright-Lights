@@ -18,18 +18,20 @@ const lastSongs = [
   'Zedd, Bright Lights — Follow You Down'
 ]
 
-const FollowMe = ['spotify', 'iTunes']
-
-const FollowMeIcons = [group302, group303]
+const musicServises = [
+  ['spotify', group302],
+  ['iTunes', group303]
+]
 
 const Music = () => {
   return (
     <Grid container
     alignItems="center"
     mt='calc(11.5em + 4vw)'
+    
     >
       <Grid item
-      pr={6} mt={{lg: 0, sm: 'calc(0.1em + 8vw)', xs: 'calc(0.1em + 9vw)'}}
+      pr={{lg: 6, xs: 0}} mt={{lg: 0, sm: 'calc(0.1em + 8vw)', xs: 'calc(0.1em + 9vw)'}}
       lg={6} xs={12}
       >
         <CardMedia
@@ -38,7 +40,7 @@ const Music = () => {
         image={group301}
         sx={{ 
           borderRadius:'100%',
-          maxWidth: '510px' 
+          maxWidth: '510px'
         }}
         />
       </Grid>
@@ -46,6 +48,7 @@ const Music = () => {
       <Grid item
       lg={6} xs={12}
       mt={{ lg: 0, xs: 'calc(0.1em + 10vw)'}}
+      pl={{lg: 1, xs: 0 }}
       >
         <Grid container
         direction="column"
@@ -76,8 +79,7 @@ const Music = () => {
           lg={2} xs={2}
           >
             <FollowUs
-            FollowMeIcons={FollowMeIcons}
-            title={FollowMe[0]}
+            musicServises={musicServises}
             />
           </Grid>
           

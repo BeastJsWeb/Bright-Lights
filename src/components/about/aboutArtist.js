@@ -23,6 +23,7 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
           pr={{ lg: '4.5vw', xs: '20px'}}
           pl={{ lg: '80px', xs: '20px'}}
           mt={{ lg: 'calc(1.5em - 16vh)', xs: 0 }}
+          rowGap='calc(0.5em + 0.8vw)'
           >
             <Typography
             color='white'
@@ -40,20 +41,29 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
                 position: 'absolute',
                 maxWidth: '100px',
                 maxHeight: '100px',
-                zIndex: -1
+                zIndex: -1,
               }}
               />
               {textAboutArtist}
             </Typography>
             <Typography
-              color='#7A66CC'
-              fontSize='calc(0.7em + 0.3vw)'
-              fontWeight={700}
-              borderTop='1px solid silver'
-              fontFamily='Poppins'
-              pt='calc(0.5em + 0.8vw)'
+            color='#7A66CC'
+            fontSize='calc(0.8em + 0.25vw)'
+            fontWeight={700}
+            borderTop='1px solid silver'
+            fontFamily='Poppins'
+            pt='calc(0.5em + 0.8vw)'
+            >
+              <Box display='inline' 
+              sx={{
+              cursor: 'pointer',
+              '&:hover' : {
+                color: '#7A76CC'
+              }
+              }} 
               >
-              {linkSiteText}
+                {linkSiteText}
+              </Box>
             </Typography>
           </Grid>
 

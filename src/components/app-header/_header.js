@@ -9,19 +9,18 @@ import {
   Toolbar 
 } from '@mui/material';
 
-
 const pages = ['About', 'News', 'Music', 'Media', 'Tours', 'Contacts'];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    setAnchorElNav(event.currentTarget)
+  }
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
+  }
 
   return (
     <AppBar 
@@ -34,9 +33,9 @@ const Header = () => {
       color="transparent" 
       position="static"
       >
+
       <Container sx={{dispaly: 'flex' }} >
         <Toolbar disableGutters >
-
           <CardMedia
           component="img"
           src={icon}
@@ -61,6 +60,6 @@ const Header = () => {
         </Toolbar>
       </Container>
     </AppBar>
-  );
-};
+  )
+}
 export default Header;

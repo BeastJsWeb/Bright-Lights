@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, IconButton, Stack, Typography } from "@mui/material";
 
-const FollowUs = ({ FollowMeIcons, title, title2 }) => {
+const FollowUs = ({ musicServises }) => {
   return (
     <>
       <Typography
@@ -19,7 +19,7 @@ const FollowUs = ({ FollowMeIcons, title, title2 }) => {
       spacing={{ lg: 3, sm: 3, xs: 5 }} 
       ml='calc(0.3em + 1.8vw)'
       >
-        {FollowMeIcons.map((icon) => (
+        {musicServises.map(e => (
           <Button 
           variant="span" 
           disableTouchRipple
@@ -39,7 +39,7 @@ const FollowUs = ({ FollowMeIcons, title, title2 }) => {
             <IconButton size="small" >
               <img
               alt="about"
-              src={icon}
+              src={e[1]}
               width={30}
               height={30}
               />
@@ -50,7 +50,7 @@ const FollowUs = ({ FollowMeIcons, title, title2 }) => {
             fontWeight={600}
             sx={{fontSize: "calc(0.7em + 0.2vw)"}}
             >
-              {title}
+              {e[0]}
             </Typography>
           </Button>
         ))}

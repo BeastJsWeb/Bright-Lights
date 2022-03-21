@@ -1,0 +1,58 @@
+import { Grid } from "@mui/material";
+import React, { Component } from "react";
+import CardItem from "../app/CardItem";
+import group401 from '../../images/group4/01.png'
+import group402 from '../../images/group4/02.png'
+import group403 from '../../images/group4/03.png'
+import group404 from '../../images/group4/04.png'
+import group405 from '../../images/group4/05.png'
+
+const MediaLib = [
+  { title: 'EDC New York', title2: 'Mainstage', image: group401 },
+  { title: 'EDC Amsterdam', title2: 'Mainstage', image: group402 },
+  { title: 'EDC Colorado', title2: 'Mainstage', image: group403 },
+  { title: 'EDC Las Vegas Mainstage', image: group404 },
+  { title: 'EDC Miami', title2: 'Mainstage', image: group405 }
+]
+
+export default class Media extends Component {
+  render() {
+    return (
+      <Grid container 
+      mt='calc(0.5em + 6.7vw)'  
+      spacing='1.5vw'
+      alignItems={{lg: 'center'}}
+      >
+        <Grid item 
+        lg={3} xs={6} 
+        >
+          {MediaLib.slice(0,1).map(post => (
+            <CardItem {...post} />
+          ))}
+        </Grid>
+        <Grid container item
+        lg={6} xs={12}
+        spacing='1.5vw'
+        sx={{
+          order: {lg: 0, xs: -1}
+        }}
+        >
+          {MediaLib.slice(1,4).map(post => (
+            <Grid item 
+            flexGrow={1} 
+            >
+              <CardItem {...post} />
+            </Grid>
+          ))}
+        </Grid>
+          {MediaLib.slice(4,5).map(post => (
+            <Grid item 
+            lg={3} xs={6}
+            >
+              <CardItem {...post} />
+            </Grid>
+          ))}
+      </Grid>
+    )
+  }
+}

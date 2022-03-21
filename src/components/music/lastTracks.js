@@ -23,7 +23,17 @@ const LastTracks = ({ lastSongs }) => {
         lineHeight='27px'
         fontFamily='Poppins'
         minWidth='calc(15em + 4vw)'
-        sx={{ paddingBottom: 'calc(0.5em + 0.6vw)' }}
+        sx={{ 
+          paddingBottom: 'calc(0.5em + 0.6vw)',
+          '&:hover' : {
+            color: '#7A76CC',
+            cursor: 'pointer'
+          },
+          '&:active' : {
+            color: '#7A66CC',
+            fontWeight: 600
+          }
+        }}
         >
           {song}
         </Typography>
