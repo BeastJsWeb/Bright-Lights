@@ -1,0 +1,119 @@
+import React from "react"
+import { Grid, CardMedia, Typography } from "@mui/material";
+import icon from '../../images/header01.png';
+import footer01 from '../../images/footer/01.svg'
+import footer02 from '../../images/footer/02.svg'
+import footer03 from '../../images/footer/03.svg'
+import footer04 from '../../images/footer/04.svg'
+import footer05 from '../../images/footer/05.svg'
+import footer06 from '../../images/footer/06.svg'
+import IconsMedia from "../app/iconsMedia";
+
+const footerData = [
+  {
+    image: icon,
+    Managment: 'Jake Henny',
+    Email: 'jake@brightlightsofficial.com'
+  }
+]
+
+const icons = [
+  footer01, footer02, footer03, footer04, footer05, footer06
+]
+
+const Contacts = () => {
+  return (
+    <Grid container spacing={{sm: 7, xs: 1}}
+    justifyContent='center'
+    >
+
+     {footerData.map(data =>(
+      <>
+        <Grid item >
+
+          <CardMedia
+          component='img'
+          alt='footer'
+          width='100%'
+          height='auto'
+          image={data.image}
+          />
+        </Grid>
+        <Grid item container
+        spacing={{sm: 4, xs: 2}} 
+        sx={{
+          '*' : {
+            fontSize: 'calc(0.8em + 0.2vw)',
+            fontFamily: 'Poppins'
+          }
+        }}
+        >
+
+          <Grid item 
+          sm={5.65} 
+          textAlign='end'
+          >
+
+            <Typography 
+            color='white'
+            >
+              ARTIST MANAGEMENT:
+            </Typography>
+            <Typography 
+            color='white'
+            >
+              EMAIL:
+            </Typography>
+          </Grid>
+          <Grid item 
+          sm={5.65} 
+          >
+
+            <Typography 
+            color='white'
+            textTransform='uppercase'
+            >
+              {data.Managment}
+            </Typography>
+            <Typography 
+            color='white'
+            textTransform='uppercase'
+            >
+              {data.Email}
+            </Typography>
+          </Grid>
+        </Grid>
+      </>
+     ))}
+      <Grid item container
+      direction='row'
+      justifyContent='center'
+      columnGap={{ sm: 2.5, xs: 1 }}
+      >
+
+        {icons.map(icon => (
+          <IconsMedia 
+          image={icon}
+          width={60}
+          height={60}
+          />
+        ))}
+      </Grid>
+      <Grid item 
+      mb='calc(1em + 0.8vw)' mt='calc(1em + 1.5vw)'
+      >
+
+        <Typography
+        textTransform='uppercase'
+        fontSize='calc(0.5em + 0.2vw)'
+        color='white'
+        sx={{opacity: 0.5}}
+        >
+          ©  2020 DJ bright lights.
+        </Typography>
+      </Grid>
+    </Grid>
+  )
+}
+
+export default Contacts

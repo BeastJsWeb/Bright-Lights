@@ -6,6 +6,7 @@ import About from "../about/_about";
 import Music from "../music/_music";
 import Media from "../media/_media";
 import Tours from "../tours/_tours";
+import Contacts from '../contacts/_contacts'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       maxWidth='false' 
       sx={{
         maxWidth: 'calc(1em + 60vw)',
-        minWidth: '300px'
+        minWidth: '300px',
+        userSelect: 'none'
       }}
       >
         <News/>
@@ -24,6 +26,7 @@ function App() {
         <Media/>
         <Tours/>
       </Container>
+      <Contacts/>
     </>
   )
 }

@@ -24,7 +24,27 @@ const HeaderDesktop = ({headerPages}) => {
           fontSize: '18px', 
           fontWeight: 600, 
           display: 'block',
-          fontFamily: 'Poppins' 
+          fontFamily: 'Poppins',
+          borderTopLeftRadius: 'calc(0.1em + 0.7vw)',
+          borderBottomRightRadius: 'calc(0.1em + 0.7vw)',
+          '&:before' : {
+            content: "''",
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: 0,
+            height: '100%',
+            background: 'rgba(255,255,255,0.3)',
+            transition: 'all 0.3s ease',
+            opacity: 0
+            
+          },
+          '&:hover:before' : {
+            width: '100%',
+            borderTopLeftRadius: 'calc(0.1em + 0.7vw)',
+            borderBottomRightRadius: 'calc(0.1em + 0.7vw)',
+            opacity: 1
+          }
         }}
         >
           {page}

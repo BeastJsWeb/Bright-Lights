@@ -35,7 +35,6 @@ const NavMenu = ({headerPages, openNavMenu, closeNavMenu, openNavMenuCheck}) => 
         PaperProps={{
           sx: {
             backgroundColor: "transparent",
-            color: "white",
             top: '70px',
             boxShadow: 'none',
             height: 'auto',
@@ -44,12 +43,33 @@ const NavMenu = ({headerPages, openNavMenu, closeNavMenu, openNavMenuCheck}) => 
         }}
         >
           {headerPages.map(page => (
-            <MenuItem key={page} onClick={closeNavMenu}
+            <MenuItem key={page} 
             sx={{
-              '&:hover > *' : {
-                opacity: 0.7,
+              color: "white",
+              borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
+              borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
+              '&:active' : {
+                opacity: 0.8,
                 transform: `translate(5%, 0)`
-              }
+              },
+              '&:before' : {
+                content: "''",
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: 0,
+                height: '100%',
+                background: 'rgba(255,255,255,0.3)',
+                transition: 'all 0.3s ease',
+                opacity: 0,
+                
+              },
+              '&:hover:before' : {
+                width: '100%',
+                borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
+                borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
+                opacity: 1,
+              } 
             }} 
             >
               <Typography

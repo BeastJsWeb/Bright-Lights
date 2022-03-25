@@ -65,7 +65,7 @@ export default class CardItem extends Component {
         </Typography>
         <CardMedia
         component='img'
-        alt="works"
+        alt={title}
         image={image}
         sx={{
           maxHeight: {maxHeight},

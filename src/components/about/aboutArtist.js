@@ -22,7 +22,7 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
           lg={7} xs={12}
           pr={{ lg: '4.5vw', xs: '20px'}}
           pl={{ lg: '80px', xs: '20px'}}
-          mt={{ lg: 'calc(1.5em - 16vh)', xs: 0 }}
+          mt={{ lg: 'calc(0.1em - 6.5vw)', xs: 0 }}
           rowGap='calc(0.5em + 0.8vw)'
           >
             <Typography
@@ -69,11 +69,11 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
 
           <Grid item
           lg={4} xs={12}
-          mt={{ lg: 'calc(1.5em - 16vh)', xs: '10px' }}
+          mt={{ lg: 'calc(0.1em - 6.5vw)', xs: '10px' }}
           >
             <CardMedia
             component='img'
-            alt="image"
+            alt="artistPhoto"
             image={img}
             sx={{
               zIndex: 1,

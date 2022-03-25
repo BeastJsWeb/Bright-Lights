@@ -28,7 +28,8 @@ const Header = () => {
         m: 'auto', 
         maxWidth: '1000px', 
         boxShadow: 'none',
-        minWidth: '300px'
+        minWidth: '300px',
+        userSelect: 'none'
       }} 
       color="transparent" 
       position="static"

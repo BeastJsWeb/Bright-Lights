@@ -1,66 +1,86 @@
-import { Card, CardActionArea, Stack, CardMedia, CardContent, Typography, Button, CardActions } from "@mui/material"
-import React from "react"
-import Carousel from "react-material-ui-carousel"
+import React, { Component } from "react"
+import { Box } from "@mui/material"
 import group501 from '../../images/group5/01.png'
 import group502 from '../../images/group5/02.png'
 import group503 from '../../images/group5/03.png'
+import TourCard from "./tourCard"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { SampleNextArrow, SamplePrevArrow } from './arrowsStyle'
 
 const toursData = [
   { 
     location: 'Chandler, AZ', 
-    place: 'The Park at Wild Horse Pass',
-    date: 'Apr 02 2021',
+    label: 'The Park at Wild Horse Pass',
+    date: 'APR 02 2021',
     image: group501
   },
 
   { 
     location: 'Ibiza, IBZ', 
-    place: 'Swag Ibiza Club',
-    date: 'Jul 08 2021',
+    label: 'Swag Ibiza Club',
+    date: 'JUL 08 2021',
     image: group502
   },
 
   { 
     location: 'Ibiza, IBZ', 
-    place: 'El Swing Ibiza',
-    date: 'Jul 10 2021',
+    label: 'El Swing Ibiza',
+    date: 'JUL 10 2021',
     image: group503
+  },
+
+  { 
+    location: 'Ibiza, IBZ', 
+    label: 'Swag Ibiza Club',
+    date: 'JUL 08 2021',
+    image: group502
   }
 ]
 
-const Tours = () => {
-  return (
-    <Carousel 
-    sx={{
-      justifyContent: 'center'
-    }} >
-      {toursData.map(tour => (
-        <Card sx={{ maxWidth: 'calc(5em + 14vw)' }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="280vw"
-              image={tour.image}
-              alt="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {tour.place}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {tour.data}
-              </Typography>
-            </CardContent>
-            </CardActionArea>
-            <CardActions>
-            <Button size="small" color="primary">
-              Share
-            </Button>
-        </CardActions>
-      </Card>
-      ))}
-    </Carousel>
-  )
-}
 
-export default Tours
+export default class Tours extends Component {
+  render() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      lazyLoad: true,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1.02,
+            slidesToScroll: 1,
+            arrows: false
+          }
+        }
+      ]
+    }
+
+    return (
+      <Box 
+      width='103%' 
+      ml='-0.9vw' mt='9vw' mb='9vw' 
+      >
+        <Slider {...settings} >
+          {toursData.map(tour => (
+            <TourCard {...tour} />
+          ))}
+        </Slider>
+      </Box>
+    )
+  }
+}
