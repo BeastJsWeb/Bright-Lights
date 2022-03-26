@@ -12,5 +12,7 @@ You may serve it with a static server:
 
     "homepage": "https://beastjsweb.github.io/react-react-bootstrap-5/build",
 
+    "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
