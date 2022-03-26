@@ -8,7 +8,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const NavMenu = ({headerPages, openNavMenu, closeNavMenu, openNavMenuCheck}) => {
+const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) => {
   return (
     <Box 
     sx={{ 
@@ -43,7 +43,8 @@ const NavMenu = ({headerPages, openNavMenu, closeNavMenu, openNavMenuCheck}) => 
         }}
         >
           {headerPages.map(page => (
-            <MenuItem key={page} 
+            <MenuItem 
+            key={page} 
             sx={{
               color: "white",
               borderTopLeftRadius: 'calc(1.5em + 1.7vh)',

@@ -1,13 +1,14 @@
 import React from "react";
 import HeaderDesktop from "./headerDesktop";
 import NavMenu from "./navMenu";
-import icon from '../../images/header01.png';
+import mainLogo from '../../images/header01.png';
 import { 
-  Container,  
-  CardMedia,
+  Container, 
   AppBar, 
-  Toolbar 
+  Toolbar, 
+  Box
 } from '@mui/material';
+import Logo from "../app/logo";
 
 const pages = ['About', 'News', 'Music', 'Media', 'Tours', 'Contacts'];
 
@@ -35,17 +36,11 @@ const Header = () => {
       position="static"
       >
 
-      <Container sx={{dispaly: 'flex' }} >
+      <Container sx={{ dispaly: 'flex' }} >
         <Toolbar disableGutters >
-          <CardMedia
-          component="img"
-          src={icon}
-          alt="Logo"
-          sx={{
-            width: '225px', 
-            maxWidth: '70%'
-          }}
-          />
+          <Box>
+            <Logo image={mainLogo} />
+          </Box>
 
           <NavMenu
           headerPages={pages}
