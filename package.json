@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://beastjsweb.github.io/Bright-Lights/",
+  "homepage": "https://beastjsweb.github.io/Bright-Lights/build/",
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
