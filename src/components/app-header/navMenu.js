@@ -31,14 +31,15 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
         <MenuIcon/>
       </IconButton>
         <SwipeableDrawer
-        anchor='right'
+        anchor='top'
         open={Boolean(openNavMenuCheck)}
         onClose={closeNavMenu}
         sx={{ background: 'rgba(0, 0, 0, 0.4)' }}
         PaperProps={{
           sx: {
             backgroundColor: 'rgba(0, 0, 0, 0.4)',
-            height: '100%'
+            height: 'auto%',
+            pl: 2, pr: 2
           }
         }}
         >
@@ -51,7 +52,7 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
               borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
               '&:active' : {
                 opacity: 0.8,
-                transform: `translate(5%, 0)`
+                transform: `translate(2%, 0)`
               },
               '&:before' : {
                 content: "''",

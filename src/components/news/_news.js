@@ -30,7 +30,7 @@ const News = () => {
   return (
     <>
       <Bground
-      img={BGimage}
+      img={ new Image().src =  BGimage }
       />
       <Title
       mainTitle='War For Love'

@@ -1,19 +1,17 @@
 {
   "files": {
     "main.css": "/Bright-Lights/static/css/main.395e909e.css",
-    "main.js": "/Bright-Lights/static/js/main.6e9d9609.js",
-    "static/media/01.jpg": "/Bright-Lights/static/media/01.f2197b9f191dded6173b.jpg",
-    "static/media/02.png": "/Bright-Lights/static/media/02.879e1186ffc85f593232.png",
-    "static/media/01.png": "/Bright-Lights/static/media/01.bc6dc1ad56402b2ac1eb.png",
-    "static/media/04.png": "/Bright-Lights/static/media/04.c7129bd6bb39d9c4f0bd.png",
-    "static/media/02.jpg": "/Bright-Lights/static/media/02.86e6d0a706bf8ce0f466.jpg",
-    "static/media/03.png": "/Bright-Lights/static/media/03.9933784e51a67edaebd2.png",
-    "static/media/05.png": "/Bright-Lights/static/media/05.a05a86488fe457ebeecc.png",
+    "main.js": "/Bright-Lights/static/js/main.efbb6e4e.js",
+    "static/media/01.webp": "/Bright-Lights/static/media/01.143bd1e81d98b3281a49.webp",
+    "static/media/02.webp": "/Bright-Lights/static/media/02.bcb725a5621bdacbf360.webp",
     "static/media/PoppinsRegular.woff2": "/Bright-Lights/static/media/PoppinsRegular.9641d5d087bc9e626d4c.woff2",
     "static/media/PoppinsSemiBold.woff2": "/Bright-Lights/static/media/PoppinsSemiBold.b2be0bf638eacbb24415.woff2",
     "static/media/PoppinsBold.woff2": "/Bright-Lights/static/media/PoppinsBold.02d30d49f061087e6275.woff2",
     "static/media/PoppinsMedium.woff2": "/Bright-Lights/static/media/PoppinsMedium.13c404f85f4b8532e4e9.woff2",
-    "static/media/header01.png": "/Bright-Lights/static/media/header01.d43491edc45e41c4c7c1.png",
+    "static/media/03.webp": "/Bright-Lights/static/media/03.dcfe52cded770c03b689.webp",
+    "static/media/04.webp": "/Bright-Lights/static/media/04.52a01a72eb790f4406f2.webp",
+    "static/media/05.webp": "/Bright-Lights/static/media/05.5be241f7396dc356d55f.webp",
+    "static/media/header01.webp": "/Bright-Lights/static/media/header01.3fc618b60120acfecced.webp",
     "static/media/03.svg": "/Bright-Lights/static/media/03.65c1dcda9b3f6d23637bdc252dd154ef.svg",
     "static/media/01.svg": "/Bright-Lights/static/media/01.55497ac8cfc88897d1f0722eab62540d.svg",
     "static/media/slick.svg": "/Bright-Lights/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -28,10 +26,10 @@
     "static/media/left.svg": "/Bright-Lights/static/media/left.91aefab9ab57d605dbc9bfc7b8265eb6.svg",
     "index.html": "/Bright-Lights/index.html",
     "main.395e909e.css.map": "/Bright-Lights/static/css/main.395e909e.css.map",
-    "main.6e9d9609.js.map": "/Bright-Lights/static/js/main.6e9d9609.js.map"
+    "main.efbb6e4e.js.map": "/Bright-Lights/static/js/main.efbb6e4e.js.map"
   },
   "entrypoints": [
     "static/css/main.395e909e.css",
-    "static/js/main.6e9d9609.js"
+    "static/js/main.efbb6e4e.js"
   ]
 }

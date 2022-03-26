@@ -17,7 +17,8 @@ function App() {
       sx={{
         maxWidth: 'calc(1em + 60vw)',
         minWidth: '300px',
-        userSelect: 'none'
+        userSelect: 'none',
+        p: 0
       }}
       >
         <News/>

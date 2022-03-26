@@ -1,8 +1,7 @@
 import React from "react";
-import { Grid } from "@mui/material";
-import CardImg from "../app/cardImg";
+import { Grid, CardMedia } from "@mui/material";
 
-const AboutSongImg = ({img, maxWidth = '450px'}) => {
+const AboutSongImg = ({ img }) => {
   return (
     <Grid 
       item lg={6} xs={12}
@@ -16,9 +15,16 @@ const AboutSongImg = ({img, maxWidth = '450px'}) => {
         }
       }}
       >
-        <CardImg
-        img={img}
-        maxWidth={maxWidth}
+        <CardMedia
+        component='img'
+        alt="aboutSong"
+        image={img}
+        sx={{
+          borderTopLeftRadius: '2em 2em',
+          borderBottomRightRadius: '2em 2em',
+          maxWidth: '450px',
+          height: 'auto'
+        }}
         />
     </Grid>
   )

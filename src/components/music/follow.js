@@ -17,7 +17,7 @@ const FollowUs = ({ musicServiсes }) => {
       <Stack container 
       direction='row' 
       alignItems='center'
-      spacing={{ lg: 3, sm: 3, xs: 5 }} 
+      spacing={3} 
       ml='calc(0.3em + 1.8vw)'
       >
 
