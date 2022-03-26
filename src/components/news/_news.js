@@ -4,10 +4,10 @@ import Bground from "./bground";
 import Title from "./title";
 import CardItem from "../app/CardItem";
 import { Grid } from '@mui/material';
-import BGimage from '../../images/01.jpg';
-import group101 from '../../images/group1/01.png';
-import group102 from '../../images/group1/02.png';
-import group103 from '../../images/group1/03.png';
+import BGimage from '../../images/01.webp';
+import group101 from '../../images/group1/01.webp';
+import group102 from '../../images/group1/02.webp';
+import group103 from '../../images/group1/03.webp';
 
 const news = [
   { 

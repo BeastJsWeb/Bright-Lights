@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import { Box } from "@mui/material"
-import group501 from '../../images/group5/01.png'
-import group502 from '../../images/group5/02.png'
-import group503 from '../../images/group5/03.png'
+import group501 from '../../images/group5/01.webp'
+import group502 from '../../images/group5/02.webp'
+import group503 from '../../images/group5/03.webp'
 import TourCard from "./tourCard"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderDesktop from "./headerDesktop";
 import NavMenu from "./navMenu";
-import mainLogo from '../../images/header01.png';
+import mainLogo from '../../images/header01.webp';
 import { 
   Container, 
   AppBar, 

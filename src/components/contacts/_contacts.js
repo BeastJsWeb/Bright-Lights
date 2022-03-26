@@ -1,15 +1,15 @@
 import React from "react"
-import { Grid, Typography } from "@mui/material";
-import logoIcon from '../../images/header01.png';
+import { Grid, Typography } from "@mui/material"
+import logoIcon from '../../images/header01.webp'
 import footer01 from '../../images/footer/01.svg'
 import footer02 from '../../images/footer/02.svg'
 import footer03 from '../../images/footer/03.svg'
 import footer04 from '../../images/footer/04.svg'
 import footer05 from '../../images/footer/05.svg'
 import footer06 from '../../images/footer/06.svg'
-import IconsMedia from "../app/iconsMedia";
-import Management from "./management";
-import Logo from "../app/logo";
+import IconsMedia from "../app/iconsMedia"
+import Management from "./management"
+import Logo from "../app/logo"
 
 const footerData = [
   {

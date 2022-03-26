@@ -1,13 +1,13 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import group201 from '../../images/group2/01.svg'
-import group202 from '../../images/group2/02.png'
+import group202 from '../../images/group2/02.webp'
 import group203 from '../../images/group2/03.svg'
 import AboutSongImg from "./aboutSongImg";
 import AboutSongText from "./aboutSongText/aboutSongText";
 import AboutArtist from "./aboutArtist";
-import group1Text01 from '../../images/group2/text/01.jpg';
-import group2Text02 from '../../images/group2/text/02.jpg';
+import group1Text01 from '../../images/group2/text/01.webp';
+import group2Text02 from '../../images/group2/text/02.webp';
 
 const aboutContent = [
   { titleIcon: group201,

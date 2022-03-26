@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, CardMedia } from "@mui/material";
-import group301 from '../../images/group3/01.jpg'
+import group301 from '../../images/group3/01.webp'
 import TitleAbout from "../about/aboutSongText/titleAbout";
 import group201 from '../../images/group2/01.svg'
 import Player from "../news/player";

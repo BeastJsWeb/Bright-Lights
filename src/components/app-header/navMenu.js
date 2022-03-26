@@ -2,20 +2,23 @@ import React from "react";
 import { 
   Box, 
   IconButton,
-  Drawer,
   MenuItem,
-  Typography 
+  Typography, 
+  SwipeableDrawer
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) => {
   return (
     <Box 
+    position='fixed' 
+    right={10}
+    zIndex={100}
     sx={{ 
       flexGrow: 1, 
       display: { xs: 'flex', md: 'none' },
       justifyContent: 'flex-end', 
-      mb: 2 
+      mb: 2
     }}
     >
       <IconButton active
@@ -23,22 +26,19 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
       aria-controls="menu-appbar"
       aria-haspopup="listbox"
       onClick={openNavMenu}
-      sx={{color: 'white'}}
+      sx={{color: 'white', opacity: 0.5 }}
       >
         <MenuIcon/>
       </IconButton>
-        <Drawer
+        <SwipeableDrawer
         anchor='right'
         open={Boolean(openNavMenuCheck)}
         onClose={closeNavMenu}
-        sx={{background: 'rgba(0, 0, 0, 0.7)'}}
+        sx={{ background: 'rgba(0, 0, 0, 0.4)' }}
         PaperProps={{
           sx: {
-            backgroundColor: "transparent",
-            top: '70px',
-            boxShadow: 'none',
-            height: 'auto',
-            pr: 2
+            backgroundColor: 'rgba(0, 0, 0, 0.4)',
+            height: '100%'
           }
         }}
         >
@@ -82,7 +82,7 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
               </Typography>
             </MenuItem>
             ))}
-        </Drawer>
+        </SwipeableDrawer>
     </Box>
   )
 }

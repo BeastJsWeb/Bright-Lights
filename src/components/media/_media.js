@@ -1,11 +1,11 @@
 import { Grid } from "@mui/material";
 import React, { Component } from "react";
 import CardItem from "../app/CardItem";
-import group401 from '../../images/group4/01.png'
-import group402 from '../../images/group4/02.png'
-import group403 from '../../images/group4/03.png'
-import group404 from '../../images/group4/04.png'
-import group405 from '../../images/group4/05.png'
+import group401 from '../../images/group4/01.webp'
+import group402 from '../../images/group4/02.webp'
+import group403 from '../../images/group4/03.webp'
+import group404 from '../../images/group4/04.webp'
+import group405 from '../../images/group4/05.webp'
 
 const MediaLib = [
   { title: 'EDC New York', title2: 'Mainstage', image: group401 },
