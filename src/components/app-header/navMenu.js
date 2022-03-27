@@ -43,9 +43,9 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
           }
         }}
         >
-          {headerPages.map(page => (
+          {headerPages.map((page, key) => (
             <MenuItem 
-            key={page} 
+            key={page + key} 
             sx={{
               color: "white",
               borderTopLeftRadius: 'calc(1.5em + 1.7vh)',

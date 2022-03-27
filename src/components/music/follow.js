@@ -21,8 +21,8 @@ const FollowUs = ({ musicServiсes }) => {
       ml='calc(0.3em + 1.8vw)'
       >
 
-        {musicServiсes.map(service => (
-          <IconsMedia {...service} />
+        {musicServiсes.map((service, key) => (
+          <IconsMedia {...service} {...key} />
           
         ))}
       </Stack>

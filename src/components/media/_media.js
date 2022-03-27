@@ -26,10 +26,12 @@ export default class Media extends Component {
         <Grid item 
         lg={3} xs={6} 
         >
-          {MediaLib.slice(0,1).map(post => (
-            <CardItem {...post} />
+          {MediaLib.slice(0,1).map((post, key) => (
+            <CardItem {...post} {...key} />
           ))}
+
         </Grid>
+
         <Grid container item
         lg={6} xs={12}
         spacing='1.5vw'
@@ -37,21 +39,24 @@ export default class Media extends Component {
           order: {lg: 0, xs: -1}
         }}
         >
-          {MediaLib.slice(1,4).map(post => (
+          {MediaLib.slice(1,4).map((post, key) => (
             <Grid item 
             flexGrow={1} 
             >
-              <CardItem {...post} />
+              <CardItem {...post} {...key} />
             </Grid>
           ))}
+
         </Grid>
-          {MediaLib.slice(4,5).map(post => (
+
+          {MediaLib.slice(4,5).map((post, key) => (
             <Grid item 
             lg={3} xs={6}
             >
-              <CardItem {...post} />
+              <CardItem {...post} {...key} />
             </Grid>
           ))}
+          
       </Grid>
     )
   }

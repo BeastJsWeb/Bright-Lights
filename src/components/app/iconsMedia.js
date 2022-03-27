@@ -1,9 +1,10 @@
 import React from "react";
 import { Button, CardMedia, IconButton, Typography } from "@mui/material";
 
-const IconsMedia = ({ image, label, width = 30, height = 30 }) => {
+const IconsMedia = ({ key, image, label, width = 30, height = 30 }) => {
   return (
-    <Button 
+    <Button
+    key={label + key}
     variant="span" 
     disableTouchRipple
     sx={{

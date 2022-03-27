@@ -4,8 +4,9 @@ import { Box, Typography } from "@mui/material";
 const LastTracks = ({ lastSongs }) => {
   return (
     <>
-      {lastSongs.map((song, i) => (
+      {lastSongs.map((song, key) => (
       <Box 
+      key={song + key}
       display='inline-flex' 
       alignItems='baseline' 
       columnGap='calc(0.7em + 0.5vw)' 
@@ -15,7 +16,7 @@ const LastTracks = ({ lastSongs }) => {
         fontSize='calc(0.8em + 0vw)'
         fontFamily='Poppins'
         >
-          0{i+1}
+          0{key + 1}
         </Typography>
         <Typography
         color='white'

@@ -28,16 +28,16 @@ const Contacts = () => {
     <Grid container spacing={{sm: 7, xs: 1}}
     justifyContent='center'
     >
-     {footerData.map(data =>(
+     {footerData.map((data, key) =>(
       <>
         <Grid item >
-          <Logo {...data} />
+          <Logo {...data} {...key} />
         </Grid>
 
         <Grid item container
         spacing={{ sm: 4, xs: 2 }}
         >
-          <Management {...data} />
+          <Management {...data} {...key} />
         </Grid>
 
       </>
@@ -48,8 +48,9 @@ const Contacts = () => {
       justifyContent='center'
       columnGap={{ sm: 2.5, xs: 1 }}
       >
-        {icons.map(icon => (
+        {icons.map((icon, key) => (
           <IconsMedia 
+          key={ 'mediaService' + key}
           image={icon}
           width={60}
           height={60}

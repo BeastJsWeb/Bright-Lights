@@ -9,9 +9,9 @@ import {
   Stack 
 } from "@mui/material"
 
-const TourCard = ({ image, location, label, date }) => {
+const TourCard = ({key, image, location, label, date }) => {
   return (
-    <Card 
+    <Card key={label + key}
     sx={{ 
       mr: '0.8vw', ml: '0.8vw',
       borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
@@ -26,13 +26,16 @@ const TourCard = ({ image, location, label, date }) => {
     >
       <CardActionArea >
         <CardMedia
-          component="img"
-          height="auto"
-          width='100%'
-          image={image}
-          alt={label}
+        component="img"
+        height="auto"
+        width='100%'
+        image={image}
+        alt={label}
         />
-        <CardContent sx={{ margin: 'calc(0.3em + 0.3vw)', pl: 'calc(0.5em + 1vw)' }} >
+        <CardContent sx={{
+          margin: 'calc(0.3em + 0.3vw)', 
+          pl: 'calc(0.5em + 1vw)' 
+        }} >
           <Typography 
           gutterBottom
           fontFamily='Poppins'

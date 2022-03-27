@@ -29,9 +29,7 @@ const news = [
 const News = () => {
   return (
     <>
-      <Bground
-      img={ new Image().src =  BGimage }
-      />
+      <Bground img={BGimage} />
       <Title
       mainTitle='War For Love'
       subTitle='New Single'
@@ -50,17 +48,17 @@ const News = () => {
           flexWrap: 'nowrap'
         }}
         >
-         {news.map(post => (
-           <Grid item lg={1} md={1} xs={1} >
-           <CardItem 
-             {...post}
-             minWidth='calc(16em + 7vw)'
-             backgroundColor='rgba(122, 102, 204, 0.7)'
-             justifyContent='start'
-             color='white'
-             fontWeight={500}
-             fontSize='calc(0.7em + 0.3vw)'
-             />
+         {news.map((post, key) => (
+            <Grid item lg={1} md={1} xs={1} >
+              <CardItem
+              {...post} {...key}
+              minWidth='calc(16em + 7vw)'
+              backgroundColor='rgba(122, 102, 204, 0.7)'
+              justifyContent='start'
+              color='white'
+              fontWeight={500}
+              fontSize='calc(0.7em + 0.3vw)'
+              />
           </Grid>
          ))}
          

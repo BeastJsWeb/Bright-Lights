@@ -48,7 +48,6 @@ export default class Tours extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
-      lazyLoad: true,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       responsive: [
@@ -64,7 +63,8 @@ export default class Tours extends Component {
           settings: {
             slidesToShow: 1.02,
             slidesToScroll: 1,
-            arrows: false
+            arrows: false,
+            speed: 150,
           }
         }
       ]
@@ -76,8 +76,8 @@ export default class Tours extends Component {
       ml='-0.9vw' mt='9vw' mb='9vw' 
       >
         <Slider {...settings} >
-          {toursData.map(tour => (
-            <TourCard {...tour} />
+          {toursData.map((tour, key) => (
+            <TourCard {...tour} {...key} />
           ))}
         </Slider>
       </Box>
