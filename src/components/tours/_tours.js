@@ -48,7 +48,6 @@ export default class Tours extends Component {
       speed: 300,
       slidesToShow: 3,
       arrows: true,
-      lazyLoad: true,
       swipeToSlide: true,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
@@ -56,7 +55,9 @@ export default class Tours extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            speed: 500
           }
         },
         {
@@ -74,7 +75,8 @@ export default class Tours extends Component {
     return (
       <Box
       width={{ sm: '103%', xs: '85%' }} 
-      ml={{ sm: '-0.9vw', xs: '7vw' }} mt='9vw' mb='9vw'
+      ml={{ sm: '-0.9vw', xs: '7%' }} 
+      mt='9vw' mb='9vw'
       >
         <Slider {...settings} >
           {toursData.map((tour, key) => (

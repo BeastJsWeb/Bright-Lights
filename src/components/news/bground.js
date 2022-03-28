@@ -1,6 +1,8 @@
 import React from "react";
 import { CardMedia } from '@mui/material';
 
+
+
 const Bground = ({ img }) => {
   return (
     <CardMedia

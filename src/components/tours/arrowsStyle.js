@@ -19,10 +19,14 @@ export function SampleNextArrow({ className, style, onClick }) {
       marginRight: 'calc(1em - 2vw)'
     }}
     sx={{
-      opacity: 0.4,
+      opacity: {
+        sm: 0.8, xs: 0.3
+      },
       zIndex: 1,
       '&:hover' : {
-        opacity: 0.8
+        opacity: {
+          sm: 1, xs: 'none'
+        }
       }
     }}
     onClick={onClick}
@@ -46,10 +50,14 @@ export function SamplePrevArrow({ className, style, onClick }) {
       marginLeft: 'calc(1em - 2vw)'
     }}
     sx={{
-      opacity: 0.7,
+      opacity: {
+        sm: 0.8, xs: 0.3
+      },
       zIndex: 1,
       '&:hover' : {
-        opacity: 1
+        opacity: {
+          sm: 1, xs: 'none'
+        }
       }
     }}
     onClick={onClick}
