@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Bright-Lights/static/css/main.395e909e.css",
+    "main.js": "/Bright-Lights/static/js/main.f2ca9e69.js",
+    "static/media/01.webp": "/Bright-Lights/static/media/01.143bd1e81d98b3281a49.webp",
+    "static/media/02.webp": "/Bright-Lights/static/media/02.bcb725a5621bdacbf360.webp",
+    "static/media/PoppinsRegular.woff2": "/Bright-Lights/static/media/PoppinsRegular.9641d5d087bc9e626d4c.woff2",
+    "static/media/PoppinsSemiBold.woff2": "/Bright-Lights/static/media/PoppinsSemiBold.b2be0bf638eacbb24415.woff2",
+    "static/media/PoppinsBold.woff2": "/Bright-Lights/static/media/PoppinsBold.02d30d49f061087e6275.woff2",
+    "static/media/PoppinsMedium.woff2": "/Bright-Lights/static/media/PoppinsMedium.13c404f85f4b8532e4e9.woff2",
+    "static/media/03.webp": "/Bright-Lights/static/media/03.dcfe52cded770c03b689.webp",
+    "static/media/04.webp": "/Bright-Lights/static/media/04.52a01a72eb790f4406f2.webp",
+    "static/media/05.webp": "/Bright-Lights/static/media/05.5be241f7396dc356d55f.webp",
+    "static/media/header01.webp": "/Bright-Lights/static/media/header01.3fc618b60120acfecced.webp",
+    "static/media/03.svg": "/Bright-Lights/static/media/03.65c1dcda9b3f6d23637bdc252dd154ef.svg",
+    "static/media/01.svg": "/Bright-Lights/static/media/01.55497ac8cfc88897d1f0722eab62540d.svg",
+    "static/media/slick.svg": "/Bright-Lights/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Bright-Lights/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Bright-Lights/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Bright-Lights/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/05.svg": "/Bright-Lights/static/media/05.053cec74cfd7ce2d6d0d493db1431e16.svg",
+    "static/media/04.svg": "/Bright-Lights/static/media/04.a1a8e632154c249b966964a43e25eff3.svg",
+    "static/media/02.svg": "/Bright-Lights/static/media/02.8cc00a568602a06290953d9c73e0b176.svg",
+    "static/media/right.svg": "/Bright-Lights/static/media/right.bb609247622ddbb4e199072cb671d9ab.svg",
+    "static/media/06.svg": "/Bright-Lights/static/media/06.e3f584c61a722e81dee15b36133817cf.svg",
+    "static/media/left.svg": "/Bright-Lights/static/media/left.91aefab9ab57d605dbc9bfc7b8265eb6.svg",
+    "index.html": "/Bright-Lights/index.html",
+    "main.395e909e.css.map": "/Bright-Lights/static/css/main.395e909e.css.map",
+    "main.f2ca9e69.js.map": "/Bright-Lights/static/js/main.f2ca9e69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.395e909e.css",
+    "static/js/main.f2ca9e69.js"
+  ]
+}
