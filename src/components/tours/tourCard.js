@@ -9,7 +9,7 @@ import {
   Stack 
 } from "@mui/material"
 
-const TourCard = ({key, image, location, label, date }) => {
+const TourCard = ({ key, image, location, label, date }) => {
   return (
     <Card key={label + key}
     sx={{ 
@@ -27,6 +27,7 @@ const TourCard = ({key, image, location, label, date }) => {
       <CardActionArea >
         <CardMedia
         component="img"
+        loading='lazy'
         height="auto"
         width='100%'
         image={image}

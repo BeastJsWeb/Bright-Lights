@@ -6,6 +6,7 @@ export default function Logo ({ key, image }) {
     <CardMedia
     key={'Logo' + key}
     component='img'
+    loading='lazy'
     alt='Logo'
     width={233}
     height='auto'

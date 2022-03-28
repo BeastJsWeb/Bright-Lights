@@ -13,6 +13,7 @@ const TitleAbout = ({
   return (
     <Stack direction='row' spacing={spacing} alignItems='center' >
       <img
+      loading='lazy'
       alt="about"
       src={titleIcon}
       width={widthIcon}

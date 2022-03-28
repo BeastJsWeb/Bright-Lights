@@ -51,6 +51,7 @@ const Contacts = () => {
         {icons.map((icon, key) => (
           <IconsMedia 
           key={ 'mediaService' + key}
+          loading='lazy'
           image={icon}
           width={60}
           height={60}

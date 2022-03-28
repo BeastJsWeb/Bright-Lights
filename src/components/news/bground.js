@@ -1,10 +1,11 @@
 import React from "react";
 import { CardMedia } from '@mui/material';
 
-const Bground = ({img}) => {
+const Bground = ({ img }) => {
   return (
     <CardMedia
       component='img'
+      loading='eager'
       image={img}
       alt="bg"
       sx={{
@@ -14,7 +15,7 @@ const Bground = ({img}) => {
         top: '0',
         left: '0', 
         position: 'absolute', 
-        zIndex: -1,
+        zIndex: -1
       }}
       />
   )

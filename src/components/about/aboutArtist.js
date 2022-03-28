@@ -35,6 +35,7 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
             >
               <CardMedia
               component='img'
+              loading='lazy'
               alt="image"
               image={bgImg}
               sx={{
@@ -73,6 +74,7 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
           >
             <CardMedia
             component='img'
+            loading='lazy'
             alt="artistPhoto"
             image={img}
             sx={{

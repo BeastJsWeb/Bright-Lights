@@ -42,6 +42,7 @@ const Music = () => {
 
         <CardMedia
         component='img'
+        loading='lazy'
         alt={group301}
         image={group301}
         sx={{ 

@@ -67,6 +67,7 @@ export default class CardItem extends Component {
         </Typography>
         <CardMedia
         component='img'
+        loading='lazy'
         alt={title}
         image={image}
         sx={{

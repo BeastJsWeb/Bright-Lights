@@ -7,6 +7,7 @@ export function SampleNextArrow({ className, style, onClick }) {
   return (
     <CardMedia
     component='svg'
+    loading='lazy'
     alt="right"
     image={right}
     width={40}
@@ -15,12 +16,13 @@ export function SampleNextArrow({ className, style, onClick }) {
     style={{ ...style, 
       width:'40px', 
       height: '60px', 
-      marginRight: 'calc(1em - 2vw)' 
+      marginRight: 'calc(1em - 2vw)'
     }}
     sx={{
-      opacity: 0.7,
+      opacity: 0.4,
+      zIndex: 1,
       '&:hover' : {
-        opacity: 1
+        opacity: 0.8
       }
     }}
     onClick={onClick}
@@ -32,6 +34,7 @@ export function SamplePrevArrow({ className, style, onClick }) {
   return (
     <CardMedia
     component='svg'
+    loading='lazy'
     alt="left"
     image={left}
     width={40}
@@ -40,10 +43,11 @@ export function SamplePrevArrow({ className, style, onClick }) {
     style={{ ...style, 
       width:'40px', 
       height: '60px', 
-      marginLeft: 'calc(1em - 2vw)' 
+      marginLeft: 'calc(1em - 2vw)'
     }}
     sx={{
       opacity: 0.7,
+      zIndex: 1,
       '&:hover' : {
         opacity: 1
       }

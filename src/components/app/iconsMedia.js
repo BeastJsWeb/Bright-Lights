@@ -25,6 +25,7 @@ const IconsMedia = ({ key, image, label, width = 30, height = 30 }) => {
         <CardMedia
         component='svg'
         alt="svgIcon"
+        loading='lazy'
         image={image}
         width={width}
         height={height}

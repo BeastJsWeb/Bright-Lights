@@ -32,9 +32,9 @@ const toursData = [
   },
 
   { 
-    location: 'Ibiza, IBZ', 
-    label: 'Swag Ibiza Club',
-    date: 'JUL 08 2021',
+    location: 'Chandler, AZ', 
+    label: 'Swag Club',
+    date: 'JUL 08 2022',
     image: group502
   }
 ]
@@ -45,35 +45,36 @@ export default class Tours extends Component {
     const settings = {
       dots: false,
       infinite: true,
-      speed: 500,
+      speed: 300,
       slidesToShow: 3,
-      slidesToScroll: 3,
+      arrows: true,
+      lazyLoad: true,
+      swipeToSlide: true,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 2
           }
         },
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 1.02,
-            slidesToScroll: 1,
-            arrows: false,
-            speed: 150,
+            slidesToShow: 1,
+            fade:true,
+            swipeToSlide: false
+            
           }
         }
       ]
     }
 
     return (
-      <Box 
-      width='103%' 
-      ml='-0.9vw' mt='9vw' mb='9vw' 
+      <Box
+      width={{ sm: '103%', xs: '85%' }} 
+      ml={{ sm: '-0.9vw', xs: '7vw' }} mt='9vw' mb='9vw'
       >
         <Slider {...settings} >
           {toursData.map((tour, key) => (

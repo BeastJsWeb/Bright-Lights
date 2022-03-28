@@ -18,6 +18,7 @@ const AboutSongImg = ({ img }) => {
         <CardMedia
         component='img'
         alt="aboutSong"
+        loading='lazy'
         image={img}
         sx={{
           borderTopLeftRadius: '2em 2em',
