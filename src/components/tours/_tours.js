@@ -57,7 +57,8 @@ export default class Tours extends Component {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            speed: 500
+            speed: 500,
+            swipe: false
           }
         },
         {
