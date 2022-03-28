@@ -10,17 +10,9 @@ You may serve it with a static server:
 
   for load local serve delete from .json:
 
-    "homepage": "https://beastjsweb.github.io/Bright-Lights/",
+    "homepage": "https://beastjsweb.github.io/react-react-bootstrap-5/build",
 
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-
-npm: {
-  1 Проверить пакеты, необъявленные в package.json
-  Запустите: npm prune,
-
-  2 Проверить пакет на устаревшие зависимости
-  Запустите: npm outdated
-}

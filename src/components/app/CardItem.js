@@ -23,18 +23,18 @@ export default class CardItem extends Component {
       key={title + key}
       sx={{
         minWidth: {minWidth},
-        borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
-        borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
+        '& > *' : {
+          borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
+          borderBottomRightRadius: 'calc(1.5em + 1.7vh)'
+        },
         '&:hover > *' : {
           transition: 'all 0.2s ease 0s',
           color: 'rgba(122, 102, 204, 1)',
           backgroundColor: 'rgba(28, 27, 33, 0.7)',
           minHeight: '100%',
-          fontWeight: 700
-        },
-        '&:hover > :nth-child(1)' : {
-          borderTopLeftRadius: 'calc(0.9em + 1.7vh)',
-          
+          fontWeight: 700,
+          borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
+          borderBottomRightRadius: 'calc(1.5em + 1.7vh)'
         }
       }}
       >
@@ -54,11 +54,13 @@ export default class CardItem extends Component {
           minHeight: {minHeight},
           backgroundColor: {backgroundColor},
           borderTopLeftRadius: '0em',
-          borderBottomRightRadius: 'calc(0.8em + 1.7vh)',
+          borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
           fontSize: {fontSize},
           zIndex: 1,
           '&:hover' : {
-            fontSize: 'calc(1em + 0.4vw)'
+            fontSize: 'calc(1em + 0.4vw)',
+            borderTopLeftRadius: 'calc(0.9em + 1.7vh)',
+            borderBottomRightRadius: 'calc(0.8em + 1.7vh)'
           }
         }}
         >
@@ -71,9 +73,7 @@ export default class CardItem extends Component {
         image={image}
         sx={{
           maxHeight: {maxHeight},
-          maxWidth: {maxWidth},
-          borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
-          borderBottomRightRadius: 'calc(1.5em + 1.7vh)'
+          maxWidth: {maxWidth}
         }}
         />
       </CardActionArea>
