@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bright-Lights/static/css/main.395e909e.css",
-    "main.js": "/Bright-Lights/static/js/main.6a8cc8a5.js",
+    "main.js": "/Bright-Lights/static/js/main.061b70ed.js",
     "static/media/01.webp": "/Bright-Lights/static/media/01.143bd1e81d98b3281a49.webp",
     "static/media/02.webp": "/Bright-Lights/static/media/02.bcb725a5621bdacbf360.webp",
     "static/media/PoppinsRegular.woff2": "/Bright-Lights/static/media/PoppinsRegular.9641d5d087bc9e626d4c.woff2",
@@ -26,10 +26,10 @@
     "static/media/left.svg": "/Bright-Lights/static/media/left.91aefab9ab57d605dbc9bfc7b8265eb6.svg",
     "index.html": "/Bright-Lights/index.html",
     "main.395e909e.css.map": "/Bright-Lights/static/css/main.395e909e.css.map",
-    "main.6a8cc8a5.js.map": "/Bright-Lights/static/js/main.6a8cc8a5.js.map"
+    "main.061b70ed.js.map": "/Bright-Lights/static/js/main.061b70ed.js.map"
   },
   "entrypoints": [
     "static/css/main.395e909e.css",
-    "static/js/main.6a8cc8a5.js"
+    "static/js/main.061b70ed.js"
   ]
 }
