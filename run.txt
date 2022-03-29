@@ -16,3 +16,16 @@ You may serve it with a static server:
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+
+npm: {
+  1 Проверить пакеты, необъявленные в package.json
+  Запустите: npm prune,
+
+  2 Проверить пакет на устаревшие зависимости
+  Запустите: npm outdated
+},
+
+git: {
+  git ckeckout 'commit name' - переключиться между коммитами
+  got log - список коммитов
+}
