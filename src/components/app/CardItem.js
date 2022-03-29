@@ -26,15 +26,18 @@ export default class CardItem extends Component {
         '& > *' : {
           borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
           borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
-          transition: 'all 0.2s ease 0.05s',
+          transition: { 
+            md: 'all 0.2s ease 0.05s', 
+            xs: 'none' 
+          },
         },
         '&:hover > *' : {
           color: 'rgba(122, 102, 204, 1)',
           backgroundColor: 'rgba(28, 27, 33, 0.7)',
           minHeight: '100%',
           fontWeight: 700,
-          borderTopLeftRadius: '45%',
-          borderBottomRightRadius: '45%'
+          borderTopLeftRadius: '15%',
+          borderBottomRightRadius: '15%'
         }
       }}
       >
@@ -59,8 +62,8 @@ export default class CardItem extends Component {
           zIndex: 1,
           '&:hover' : {
             fontSize: 'calc(1em + 0.4vw)',
-            borderTopLeftRadius: '44%',
-            borderBottomRightRadius: '44%',
+            borderTopLeftRadius: '14%',
+            borderBottomRightRadius: '14%',
           }
         }}
         >
@@ -75,8 +78,8 @@ export default class CardItem extends Component {
           maxHeight: {maxHeight},
           maxWidth: {maxWidth},
           '&:hover' : {
-            borderTopLeftRadius: '46%',
-            borderBottomRightRadius: '46%'
+            borderTopLeftRadius: '16%',
+            borderBottomRightRadius: '16%'
           }
         }}
         />
