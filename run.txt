@@ -29,4 +29,3 @@ git: {
   git ckeckout 'commit name' - переключиться между коммитами
   got log - список коммитов
 }
-}
