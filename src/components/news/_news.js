@@ -58,6 +58,7 @@ const News = () => {
               color='white'
               fontWeight={500}
               fontSize='calc(0.7em + 0.3vw)'
+              minHeight='30%'
               />
           </Grid>
          ))}

@@ -11,7 +11,7 @@ export default class CardItem extends Component {
       minWidth,
       maxHeight, 
       maxWidth, 
-      minHeight = '30%', 
+      minHeight = '100%', 
       backgroundColor = 'rgba(28, 27, 33, 0)',
       justifyContent = 'center',
       color = 'rgba(122, 102, 204, 0)',
@@ -34,7 +34,10 @@ export default class CardItem extends Component {
         '&:hover > *' : {
           color: 'rgba(122, 102, 204, 1)',
           backgroundColor: 'rgba(28, 27, 33, 0.7)',
-          minHeight: '100%',
+          minHeight: {
+            md: '100%',
+            xs: 'none'
+          },
           fontWeight: 700,
           borderTopLeftRadius: '15%',
           borderBottomRightRadius: '15%'
@@ -61,7 +64,10 @@ export default class CardItem extends Component {
           fontSize: {fontSize},
           zIndex: 1,
           '&:hover' : {
-            fontSize: 'calc(1em + 0.4vw)',
+            fontSize: {
+              md: 'calc(1em + 0.4vw)',
+              xs: 'none'
+            },
             borderTopLeftRadius: '14%',
             borderBottomRightRadius: '14%',
           }
