@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bright-Lights/static/css/main.af2bf2f2.css",
-    "main.js": "/Bright-Lights/static/js/main.1ac85286.js",
+    "main.js": "/Bright-Lights/static/js/main.fc686fb4.js",
     "static/js/543.4d8a7cbf.chunk.js": "/Bright-Lights/static/js/543.4d8a7cbf.chunk.js",
     "static/js/407.be366db4.chunk.js": "/Bright-Lights/static/js/407.be366db4.chunk.js",
     "static/js/535.bead3fcf.chunk.js": "/Bright-Lights/static/js/535.bead3fcf.chunk.js",
@@ -37,7 +37,7 @@
     "static/media/left.svg": "/Bright-Lights/static/media/left.91aefab9ab57d605dbc9bfc7b8265eb6.svg",
     "index.html": "/Bright-Lights/index.html",
     "main.af2bf2f2.css.map": "/Bright-Lights/static/css/main.af2bf2f2.css.map",
-    "main.1ac85286.js.map": "/Bright-Lights/static/js/main.1ac85286.js.map",
+    "main.fc686fb4.js.map": "/Bright-Lights/static/js/main.fc686fb4.js.map",
     "543.4d8a7cbf.chunk.js.map": "/Bright-Lights/static/js/543.4d8a7cbf.chunk.js.map",
     "407.be366db4.chunk.js.map": "/Bright-Lights/static/js/407.be366db4.chunk.js.map",
     "535.bead3fcf.chunk.js.map": "/Bright-Lights/static/js/535.bead3fcf.chunk.js.map",
@@ -52,6 +52,6 @@
   },
   "entrypoints": [
     "static/css/main.af2bf2f2.css",
-    "static/js/main.1ac85286.js"
+    "static/js/main.fc686fb4.js"
   ]
 }
