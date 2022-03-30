@@ -5,7 +5,7 @@ export default class CardItem extends Component {
   render() {
     const { 
       key,
-      image, 
+      image,
       title, 
       title2, 
       minWidth,
@@ -78,9 +78,12 @@ export default class CardItem extends Component {
         <CardMedia
         component='img'
         loading='lazy'
+        width={350}
+        height={300}
         alt={title}
         image={image}
         sx={{
+          height: 'auto',
           maxHeight: {maxHeight},
           maxWidth: {maxWidth},
           '&:hover' : {

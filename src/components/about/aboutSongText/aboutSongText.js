@@ -1,7 +1,7 @@
 import React from "react";
 import Hashtag from "./hashtag";
 import { Grid, Typography } from "@mui/material";
-import TitleAbout from "./titleAbout";
+import TitleAbout from "../../app/titleAbout";
 
 const AboutSongText = ({ titleIcon, title, textAboutSong, iconAboutSong, iconTitleAboutSong }) => {
   return (

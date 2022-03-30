@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://beastjsweb.github.io/Bright-Lights/",
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
     "@material-ui/icons": "^4.11.2",

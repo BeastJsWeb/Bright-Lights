@@ -1,10 +1,8 @@
 import React from "react";
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, CardMedia } from "@mui/material";
 
 const TitleAbout = ({ 
-  titleIcon, 
-  widthIcon, 
-  heightIcon, 
+  titleIcon,  
   title, 
   fontSize = 'calc(1em + 1.6vw)', 
   fontWeight = '700',
@@ -12,12 +10,16 @@ const TitleAbout = ({
 }) => {
   return (
     <Stack direction='row' spacing={spacing} alignItems='center' >
-      <img
+      <CardMedia
+      component='svg'
       loading='lazy'
       alt="about"
-      src={titleIcon}
-      width={widthIcon}
-      height={heightIcon}
+      image={titleIcon}
+      width={64}
+      height={30}
+      sx={{
+        height: 'auto'
+      }}
       />
       <Typography
       color='white'

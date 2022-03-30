@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, CardMedia } from "@mui/material";
 import group301 from '../../images/group3/01.webp'
-import TitleAbout from "../about/aboutSongText/titleAbout";
+import TitleAbout from "../app/titleAbout";
 import group201 from '../../images/group2/01.svg'
 import Player from "../news/player";
 import group302 from '../../images/group3/01.svg'
@@ -45,9 +45,12 @@ const Music = () => {
         loading='lazy'
         alt={group301}
         image={group301}
+        width={510}
+        height={510}
         sx={{ 
           borderRadius:'100%',
-          maxWidth: '510px'
+          maxWidth: '510px',
+          height: 'auto'
         }}
         />
 

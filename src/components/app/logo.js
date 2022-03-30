@@ -9,8 +9,11 @@ export default function Logo ({ key, image }) {
     loading='lazy'
     alt='Logo'
     width={233}
-    height='auto'
+    height={60}
     image={image}
+    sx={{
+      height: 'auto'
+    }}
     />
   )
 }

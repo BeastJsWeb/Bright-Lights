@@ -2,7 +2,9 @@ import React, { lazy, Suspense } from "react";
 import Bground from "./bground";
 import CircularDeterminate from "../app/progress";
 import { Grid } from '@mui/material';
+import BGimageM from '../../images/01m.webp';
 import BGimage from '../../images/01.webp';
+import BGimageR from '../../images/01r.jpg';
 import group101 from '../../images/group1/01.webp';
 import group102 from '../../images/group1/02.webp';
 import group103 from '../../images/group1/03.webp';
@@ -30,7 +32,11 @@ const news = [
 const News = () => {
   return (
     <>
-      <Bground img={BGimage} />
+        <Bground 
+        imgM={BGimageM} 
+        img={BGimage}
+        imgR={BGimageR}
+        />
       <Suspense fallback={<CircularDeterminate/>} >
         <Title
         mainTitle='War For Love'

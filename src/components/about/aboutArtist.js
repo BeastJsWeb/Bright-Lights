@@ -75,9 +75,12 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
             <CardMedia
             component='img'
             loading='lazy'
+            width={370}
+            height={470}
             alt="artistPhoto"
             image={img}
             sx={{
+              height: 'auto',
               zIndex: 1,
               borderTopLeftRadius: '2em 2em',
               borderBottomRightRadius: '2em 2em',

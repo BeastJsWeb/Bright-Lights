@@ -19,6 +19,8 @@ const AboutSongImg = ({ img }) => {
         component='img'
         alt="aboutSong"
         loading='lazy'
+        width={450}
+        height={466}
         image={img}
         sx={{
           borderTopLeftRadius: '2em 2em',

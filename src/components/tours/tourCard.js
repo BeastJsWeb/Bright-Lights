@@ -28,10 +28,13 @@ const TourCard = ({ key, image, location, label, date }) => {
         <CardMedia
         component="img"
         loading='lazy'
-        height="auto"
-        width='100%'
+        height={280}
+        width={350}
         image={image}
         alt={label}
+        sx={{
+          height: 'auto'
+        }}
         />
         <CardContent sx={{
           margin: 'calc(0.3em + 0.3vw)', 
