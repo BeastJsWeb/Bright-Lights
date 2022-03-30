@@ -1,7 +1,18 @@
 {
   "files": {
-    "main.css": "/Bright-Lights/static/css/main.395e909e.css",
-    "main.js": "/Bright-Lights/static/js/main.6e31ef1b.js",
+    "main.css": "/Bright-Lights/static/css/main.af2bf2f2.css",
+    "main.js": "/Bright-Lights/static/js/main.7c724092.js",
+    "static/js/543.0b1fee75.chunk.js": "/Bright-Lights/static/js/543.0b1fee75.chunk.js",
+    "static/js/689.4d6664b7.chunk.js": "/Bright-Lights/static/js/689.4d6664b7.chunk.js",
+    "static/js/535.8e4e2e29.chunk.js": "/Bright-Lights/static/js/535.8e4e2e29.chunk.js",
+    "static/css/532.ea68c10c.chunk.css": "/Bright-Lights/static/css/532.ea68c10c.chunk.css",
+    "static/js/532.71148e83.chunk.js": "/Bright-Lights/static/js/532.71148e83.chunk.js",
+    "static/js/131.471f1e6a.chunk.js": "/Bright-Lights/static/js/131.471f1e6a.chunk.js",
+    "static/js/305.2c084919.chunk.js": "/Bright-Lights/static/js/305.2c084919.chunk.js",
+    "static/js/863.430b8601.chunk.js": "/Bright-Lights/static/js/863.430b8601.chunk.js",
+    "static/js/383.fc269ca8.chunk.js": "/Bright-Lights/static/js/383.fc269ca8.chunk.js",
+    "static/js/349.d1402df6.chunk.js": "/Bright-Lights/static/js/349.d1402df6.chunk.js",
+    "static/js/760.a6548e4e.chunk.js": "/Bright-Lights/static/js/760.a6548e4e.chunk.js",
     "static/media/01.webp": "/Bright-Lights/static/media/01.143bd1e81d98b3281a49.webp",
     "static/media/02.webp": "/Bright-Lights/static/media/02.bcb725a5621bdacbf360.webp",
     "static/media/PoppinsRegular.woff2": "/Bright-Lights/static/media/PoppinsRegular.9641d5d087bc9e626d4c.woff2",
@@ -25,11 +36,22 @@
     "static/media/06.svg": "/Bright-Lights/static/media/06.e3f584c61a722e81dee15b36133817cf.svg",
     "static/media/left.svg": "/Bright-Lights/static/media/left.91aefab9ab57d605dbc9bfc7b8265eb6.svg",
     "index.html": "/Bright-Lights/index.html",
-    "main.395e909e.css.map": "/Bright-Lights/static/css/main.395e909e.css.map",
-    "main.6e31ef1b.js.map": "/Bright-Lights/static/js/main.6e31ef1b.js.map"
+    "main.af2bf2f2.css.map": "/Bright-Lights/static/css/main.af2bf2f2.css.map",
+    "main.7c724092.js.map": "/Bright-Lights/static/js/main.7c724092.js.map",
+    "543.0b1fee75.chunk.js.map": "/Bright-Lights/static/js/543.0b1fee75.chunk.js.map",
+    "689.4d6664b7.chunk.js.map": "/Bright-Lights/static/js/689.4d6664b7.chunk.js.map",
+    "535.8e4e2e29.chunk.js.map": "/Bright-Lights/static/js/535.8e4e2e29.chunk.js.map",
+    "532.ea68c10c.chunk.css.map": "/Bright-Lights/static/css/532.ea68c10c.chunk.css.map",
+    "532.71148e83.chunk.js.map": "/Bright-Lights/static/js/532.71148e83.chunk.js.map",
+    "131.471f1e6a.chunk.js.map": "/Bright-Lights/static/js/131.471f1e6a.chunk.js.map",
+    "305.2c084919.chunk.js.map": "/Bright-Lights/static/js/305.2c084919.chunk.js.map",
+    "863.430b8601.chunk.js.map": "/Bright-Lights/static/js/863.430b8601.chunk.js.map",
+    "383.fc269ca8.chunk.js.map": "/Bright-Lights/static/js/383.fc269ca8.chunk.js.map",
+    "349.d1402df6.chunk.js.map": "/Bright-Lights/static/js/349.d1402df6.chunk.js.map",
+    "760.a6548e4e.chunk.js.map": "/Bright-Lights/static/js/760.a6548e4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.395e909e.css",
-    "static/js/main.6e31ef1b.js"
+    "static/css/main.af2bf2f2.css",
+    "static/js/main.7c724092.js"
   ]
 }
