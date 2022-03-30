@@ -17,7 +17,7 @@ function App() {
         <Container
         maxWidth='false' 
         sx={{
-          maxWidth: 'calc(1em + 60vw)',
+          maxWidth: 'calc(10em + 53vw)',
           minWidth: '300px',
           userSelect: 'none',
           p: 0

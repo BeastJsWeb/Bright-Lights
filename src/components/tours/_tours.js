@@ -53,7 +53,7 @@ export default class Tours extends Component {
       prevArrow: <SamplePrevArrow />,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1100,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,

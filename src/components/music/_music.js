@@ -4,8 +4,8 @@ import group301 from '../../images/group3/01.webp'
 import TitleAbout from "../about/aboutSongText/titleAbout";
 import group201 from '../../images/group2/01.svg'
 import Player from "../news/player";
-import group302 from '../../images/group3/01.png'
-import group303 from '../../images/group3/02.png'
+import group302 from '../../images/group3/01.svg'
+import group303 from '../../images/group3/02.svg'
 import FollowUs from "./follow";
 import LastTracks from "./lastTracks";
 
