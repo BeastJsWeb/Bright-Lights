@@ -2,28 +2,34 @@ import React, { lazy, Suspense } from "react";
 import Bground from "./bground";
 import CircularDeterminate from "../app/progress";
 import { Grid } from '@mui/material';
-import BGimageM from '../../images/01m.webp';
-import BGimage from '../../images/01.webp';
-import BGimageR from '../../images/01r.jpg';
+import BGmob from '../../images/01m.webp';
+import BGweb from '../../images/01.webp';
+import BGjpg from '../../images/01r.jpg';
 import group101 from '../../images/group1/01.webp';
+import group101r from '../../images/group1/01.jpg';
 import group102 from '../../images/group1/02.webp';
+import group102r from '../../images/group1/02.jpg';
 import group103 from '../../images/group1/03.webp';
+import group103r from '../../images/group1/03.jpg';
 const Player = lazy(() => import("./player"))
 const Title = lazy(() => import("./title"))
 const CardItem = lazy(() => import("../app/CardItem"))
 
 const news = [
   { 
-    image: group101, 
+    image: group101,
+    jpg: group101r,
     title: 'Working on my upcoming full-lenth album that`s releasing later this year.' 
   },
   { 
-    image: group102, 
+    image: group102,
+    jpg: group102r,  
     title: 'Halloween vibes.', 
     title2: 'Listen my new track!' 
   },
   { 
-    image: group103, 
+    image: group103,
+    jpg: group103r,  
     title: 'WarForLove is OUT NOW!!', 
     title2: 'Stream it here!' 
   },
@@ -32,11 +38,11 @@ const news = [
 const News = () => {
   return (
     <>
-        <Bground 
-        imgM={BGimageM} 
-        img={BGimage}
-        imgR={BGimageR}
-        />
+      <Bground 
+      mobile={BGmob} 
+      web={BGweb} 
+      jpg={BGjpg} 
+      />
       <Suspense fallback={<CircularDeterminate/>} >
         <Title
         mainTitle='War For Love'

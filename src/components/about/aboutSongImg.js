@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, CardMedia } from "@mui/material";
 
-const AboutSongImg = ({ img }) => {
+const AboutSongImg = ({ img, jpg }) => {
   return (
     <Grid 
       item lg={6} xs={12}
@@ -22,6 +22,11 @@ const AboutSongImg = ({ img }) => {
         width={450}
         height={466}
         image={img}
+        srcSet={` 
+          ${img} 320w, 
+          ${img} 2560w, 
+          ${jpg} 
+        `}
         sx={{
           borderTopLeftRadius: '2em 2em',
           borderBottomRightRadius: '2em 2em',

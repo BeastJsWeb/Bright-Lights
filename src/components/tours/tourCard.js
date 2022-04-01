@@ -9,7 +9,7 @@ import {
   Stack 
 } from "@mui/material"
 
-const TourCard = ({ key, image, location, label, date }) => {
+const TourCard = ({ key, image, jpg, location, label, date }) => {
   return (
     <Card key={label + key}
     sx={{ 
@@ -31,6 +31,11 @@ const TourCard = ({ key, image, location, label, date }) => {
         height={280}
         width={350}
         image={image}
+        srcSet={` 
+          ${image} 320w, 
+          ${image} 2560w, 
+          ${jpg}
+        `}
         alt={label}
         sx={{
           height: 'auto'
@@ -39,7 +44,8 @@ const TourCard = ({ key, image, location, label, date }) => {
         <CardContent sx={{
           margin: 'calc(0.3em + 0.3vw)', 
           pl: 'calc(0.5em + 1vw)' 
-        }} >
+        }} 
+        >
           <Typography 
           gutterBottom
           fontFamily='Poppins'

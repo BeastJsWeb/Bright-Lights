@@ -1,7 +1,12 @@
 import React from "react";
 import { Grid, Typography, CardMedia, Box } from "@mui/material";
 
-const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
+const AboutArtist = ({
+  textAboutArtist, 
+  linkSiteText, 
+  img, jpg, 
+  bgImg, bgJpg 
+}) => {
   return (
     <>
       <Box minHeight={500} >
@@ -38,6 +43,11 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
               loading='lazy'
               alt="image"
               image={bgImg}
+              srcSet={` 
+                ${bgImg} 320w, 
+                ${bgImg} 2560w, 
+                ${bgJpg}
+              `}
               sx={{
                 position: 'absolute',
                 maxWidth: '100px',
@@ -79,6 +89,11 @@ const AboutArtist = ({textAboutArtist, linkSiteText, img, bgImg}) => {
             height={470}
             alt="artistPhoto"
             image={img}
+            srcSet={` 
+              ${img} 320w, 
+              ${img} 2560w, 
+              ${jpg}
+            `}
             sx={{
               height: 'auto',
               zIndex: 1,

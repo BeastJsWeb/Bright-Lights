@@ -2,12 +2,15 @@ import React from "react";
 import { Grid } from "@mui/material";
 import group201 from '../../images/group2/01.svg'
 import group202 from '../../images/group2/02.webp'
+import group202jpg from '../../images/group2/02.jpg'
 import group203 from '../../images/group2/03.svg'
 import AboutSongImg from "./aboutSongImg";
 import AboutSongText from "./aboutSongText/aboutSongText";
 import AboutArtist from "./aboutArtist";
 import group1Text01 from '../../images/group2/text/01.webp';
+import group1Text01jpg from '../../images/group2/text/01.jpg';
 import group2Text02 from '../../images/group2/text/02.webp';
+import group2Text02jpg from '../../images/group2/text/02.jpg';
 
 const aboutContent = [
   { titleIcon: group201,
@@ -34,7 +37,8 @@ const aboutContent = [
       'Genre: #DancePop',
       'Label: 333 Recordings'
     ],
-    img: group202
+    img: group202,
+    jpg: group202jpg
   },
 
   {
@@ -46,7 +50,9 @@ const aboutContent = [
     `,
     linkSiteText: 'PopULove.net',
     img: group2Text02,
-    bgImg: group1Text01
+    jpg: group2Text02jpg,
+    bgImg: group1Text01,
+    bgJpg: group1Text01jpg
   }
 ]
 

@@ -1,8 +1,11 @@
 import React, { Component } from "react"
 import { Box } from "@mui/material"
 import group501 from '../../images/group5/01.webp'
+import group501jpg from '../../images/group5/01.jpg'
 import group502 from '../../images/group5/02.webp'
+import group502jpg from '../../images/group5/02.jpg'
 import group503 from '../../images/group5/03.webp'
+import group503jpg from '../../images/group5/03.jpg'
 import TourCard from "./tourCard"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -14,28 +17,32 @@ const toursData = [
     location: 'Chandler, AZ', 
     label: 'The Park at Wild Horse Pass',
     date: 'APR 02 2021',
-    image: group501
+    image: group501,
+    jpg: group501jpg
   },
 
   { 
     location: 'Ibiza, IBZ', 
     label: 'Swag Ibiza Club',
     date: 'JUL 08 2021',
-    image: group502
+    image: group502,
+    jpg: group502jpg
   },
 
   { 
     location: 'Ibiza, IBZ', 
     label: 'El Swing Ibiza',
     date: 'JUL 10 2021',
-    image: group503
+    image: group503,
+    jpg: group503jpg
   },
 
   { 
     location: 'Chandler, AZ', 
     label: 'Swag Club',
     date: 'JUL 08 2022',
-    image: group502
+    image: group502,
+    jpg: group502jpg
   }
 ]
 

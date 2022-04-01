@@ -2,17 +2,46 @@ import { Grid } from "@mui/material";
 import React, { Component } from "react";
 import CardItem from "../app/CardItem";
 import group401 from '../../images/group4/01.webp'
+import group401jpg from '../../images/group4/01.jpg'
 import group402 from '../../images/group4/02.webp'
+import group402jpg from '../../images/group4/02.jpg'
 import group403 from '../../images/group4/03.webp'
+import group403jpg from '../../images/group4/03.jpg'
 import group404 from '../../images/group4/04.webp'
+import group404jpg from '../../images/group4/04.jpg'
 import group405 from '../../images/group4/05.webp'
+import group405jpg from '../../images/group4/05.jpg'
 
 const MediaLib = [
-  { title: 'EDC New York', title2: 'Mainstage', image: group401 },
-  { title: 'EDC Amsterdam', title2: 'Mainstage', image: group402 },
-  { title: 'EDC Colorado', title2: 'Mainstage', image: group403 },
-  { title: 'EDC Las Vegas Mainstage', image: group404 },
-  { title: 'EDC Miami', title2: 'Mainstage', image: group405 }
+  { 
+    title: 'EDC New York', 
+    title2: 'Mainstage', 
+    image: group401, 
+    jpg: group401jpg 
+  },
+  { 
+    title: 'EDC Amsterdam', 
+    title2: 'Mainstage', 
+    image: group402, 
+    jpg: group402jpg 
+  },
+  { 
+    title: 'EDC Colorado', 
+    title2: 'Mainstage', 
+    image: group403, 
+    jpg: group403jpg 
+  },
+  { 
+    title: 'EDC Las Vegas Mainstage', 
+    image: group404, 
+    jpg: group404jpg 
+  },
+  { 
+    title: 'EDC Miami', 
+    title2: 'Mainstage', 
+    image: group405, 
+    jpg: group405jpg 
+  }
 ]
 
 export default class Media extends Component {

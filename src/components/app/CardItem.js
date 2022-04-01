@@ -5,7 +5,7 @@ export default class CardItem extends Component {
   render() {
     const { 
       key,
-      image,
+      image, jpg,
       title, 
       title2, 
       minWidth,
@@ -82,6 +82,11 @@ export default class CardItem extends Component {
         height={300}
         alt={title}
         image={image}
+        srcSet={` 
+          ${image} 320w, 
+          ${image} 2560w, 
+          ${jpg}
+        `}
         sx={{
           height: 'auto',
           maxHeight: {maxHeight},
