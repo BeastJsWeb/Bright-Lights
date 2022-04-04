@@ -24,7 +24,8 @@ const Header = () => {
   }
 
   return (
-    <AppBar 
+    <AppBar
+    id="back-to-top-anchor"
       sx={{
         m: 'auto', 
         maxWidth: '1000px', 

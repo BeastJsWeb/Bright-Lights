@@ -59,7 +59,10 @@ const aboutContent = [
 const About = () => {
   return (
     <Grid 
-    container lg={12} xs={12}
+    container 
+    className="Section"
+    id='About'
+    lg={12} xs={12}
     display="flex"
     justifyContent='space-between'
     sx={{

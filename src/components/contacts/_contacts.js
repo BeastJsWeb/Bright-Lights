@@ -25,7 +25,10 @@ const icons = [
 
 const Contacts = () => {
   return (
-    <Grid container spacing={{sm: 7, xs: 1}}
+    <Grid container
+    className="Section"
+    id="Contacts"
+    spacing={{sm: 7, xs: 1}}
     justifyContent='center'
     >
      {footerData.map((data, key) =>(

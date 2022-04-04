@@ -47,7 +47,9 @@ const MediaLib = [
 export default class Media extends Component {
   render() {
     return (
-      <Grid container 
+      <Grid container
+      className="Section"
+      id="Media" 
       mt='calc(0.5em + 6.7vw)'  
       spacing='1.5vw'
       alignItems={{lg: 'center'}}

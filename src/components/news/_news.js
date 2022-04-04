@@ -11,7 +11,8 @@ import group102 from '../../images/group1/02.webp';
 import group102r from '../../images/group1/02.jpg';
 import group103 from '../../images/group1/03.webp';
 import group103r from '../../images/group1/03.jpg';
-const Player = lazy(() => import("./player"))
+import Song from '../../media/01.mp3'
+const Player = lazy(() => import("../app/player"))
 const Title = lazy(() => import("./title"))
 const CardItem = lazy(() => import("../app/CardItem"))
 
@@ -48,11 +49,14 @@ const News = () => {
         mainTitle='War For Love'
         subTitle='New Single'
         />
-        <Player 
+        <Player
+        tracks={Song}
         width='calc(7em + 40vw)'
         marginBottom='calc(1em + 5vw)'
         />
         <Grid container
+        className="Section"
+        id='News'
         overflow='hidden'
         >
           <Grid container

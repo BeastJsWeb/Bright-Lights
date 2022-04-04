@@ -1,9 +1,25 @@
-import React from "react";
-import { Box, Button } from '@mui/material';
+import React, { useState } from "react";
+import { Box, Button, useScrollTrigger  } from '@mui/material';
 
 const HeaderDesktop = ({headerPages}) => {
+  const [scrollTarget] = useState(undefined) 
+  const scrollTrigger = useScrollTrigger({ target: scrollTarget })
+
+  const handleClick = (event) => {
+    document.querySelectorAll(
+      ".Section"
+    ).forEach(section => {
+      if (section.id === event.target.id)
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      })
+    })
+  }
+
   return (
     <Box 
+    in={scrollTrigger}
     sx={{ 
       flexGrow: 1, 
       display: { 
@@ -18,6 +34,8 @@ const HeaderDesktop = ({headerPages}) => {
       {headerPages.map((page) => (
         <Button
         key={page}
+        id={page}
+        onClick={handleClick} 
         sx={{ 
           color: 'white', 
           textTransform: 'none', 
