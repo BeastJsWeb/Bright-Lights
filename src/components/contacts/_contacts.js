@@ -31,29 +31,36 @@ const Contacts = () => {
     spacing={{sm: 7, xs: 1}}
     justifyContent='center'
     >
-     {footerData.map((data, key) =>(
-      <>
-        <Grid item >
-          <Logo {...data} {...key} />
-        </Grid>
+      <Grid item >
+        {footerData.map((data, key) => (
+          <Logo {...data} 
+          key={key} 
+          />
 
-        <Grid item container
-        spacing={{ sm: 4, xs: 2 }}
-        >
-          <Management {...data} {...key} />
-        </Grid>
+        ))}
 
-      </>
-     ))}
+      </Grid>
+
+      <Grid item container 
+      spacing={{ sm: 4, xs: 2 }}
+      >
+        {footerData.map((data, key) => (
+          <Management {...data} 
+          key={key} 
+          />
+
+        ))}
+
+      </Grid>
 
       <Grid item container
       direction='row'
       justifyContent='center'
       columnGap={{ sm: 2.5, xs: 1 }}
       >
-        {icons.map((icon, key) => (
+        {icons.map(icon => (
           <IconsMedia 
-          key={ 'mediaService' + key}
+          key={icon.toString()}
           loading='lazy'
           image={icon}
           width={60}
@@ -65,7 +72,8 @@ const Contacts = () => {
       </Grid>
 
       <Grid item 
-      mb='calc(1em + 0.8vw)' mt='calc(1em + 1.5vw)'
+      mb='calc(1em + 0.8vw)' 
+      mt='calc(1em + 1.5vw)'
       >
         <Typography
         fontFamily='Poppins'
@@ -75,6 +83,7 @@ const Contacts = () => {
         sx={{ opacity: 0.5 }}
         >
           ©  2020 DJ bright lights.
+
         </Typography>
 
       </Grid>

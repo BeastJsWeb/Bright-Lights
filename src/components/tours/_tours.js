@@ -89,8 +89,10 @@ export default class Tours extends Component {
       mt='9vw' mb='9vw'
       >
         <Slider {...settings} >
-          {toursData.map((tour, key) => (
-            <TourCard {...tour} {...key} />
+          {toursData.map(tour => (
+            <TourCard {...tour} 
+            key={tour.label + tour.date} 
+            />
           ))}
         </Slider>
       </Box>

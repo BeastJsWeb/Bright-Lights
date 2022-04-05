@@ -11,8 +11,9 @@ export default class Preloader extends Component {
   render () {
     return (
       <Helmet>
-        {fontFamily.map((font, key) => (
-          <link {...key } 
+        {fontFamily.map(font => (
+          <link
+          key={font.toString()} 
           rel="preload" 
           href={ font } 
           as="font" 

@@ -9,9 +9,9 @@ import {
   Stack 
 } from "@mui/material"
 
-const TourCard = ({ key, image, jpg, location, label, date }) => {
+const TourCard = ({ image, jpg, location, label, date }) => {
   return (
-    <Card key={label + key}
+    <Card
     sx={{ 
       mr: '0.8vw', ml: '0.8vw',
       borderTopLeftRadius: 'calc(1.5em + 1.7vh)',

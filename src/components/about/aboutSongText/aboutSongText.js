@@ -5,7 +5,7 @@ import TitleAbout from "../../app/titleAbout";
 
 const AboutSongText = ({ titleIcon, title, textAboutSong, iconAboutSong, iconTitleAboutSong }) => {
   return (
-    <Grid item 
+    <Grid item container
     lg={6} xs={12}
     >
       <TitleAbout
@@ -29,8 +29,7 @@ const AboutSongText = ({ titleIcon, title, textAboutSong, iconAboutSong, iconTit
         {textAboutSong}
       </Typography>
 
-      <Grid 
-      container 
+      <Grid container item
       lg={12} xs={12} 
       spacing={4}
       >

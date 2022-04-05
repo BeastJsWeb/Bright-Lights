@@ -58,8 +58,7 @@ const aboutContent = [
 
 const About = () => {
   return (
-    <Grid 
-    container 
+    <Grid container 
     className="Section"
     id='About'
     lg={12} xs={12}
@@ -69,15 +68,27 @@ const About = () => {
       marginTop: 'calc(1em + 9vw)'
     }}
     >
-    {aboutContent.slice(0,1).map(aboutSong => (
-      <>
-        <AboutSongText {...aboutSong} />
-        <AboutSongImg {...aboutSong} />
-      </>
+    {aboutContent.slice(0,1).map((aboutSong, i) => (
+      <AboutSongText {...aboutSong} 
+      key={'aboutSong' + i}
+      />
+
     ))}
-    {aboutContent.slice(1,2).map(aboutArtist => (
-      <AboutArtist {...aboutArtist} />
+
+    {aboutContent.slice(0,1).map((aboutImg, i) => (
+      <AboutSongImg {...aboutImg} 
+      key={'aboutImg' + i}
+      />
+
     ))}
+
+    {aboutContent.slice(1,2).map((aboutArtist, i) => (
+      <AboutArtist {...aboutArtist} 
+      key={'abourtArtist' + i}
+      />
+
+    ))}
+    
     </Grid>
   )
 }

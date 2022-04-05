@@ -44,16 +44,19 @@ const News = () => {
       web={BGweb} 
       jpg={BGjpg} 
       />
-      <Suspense fallback={<CircularDeterminate/>} >
+
+      <Suspense fallback={ <CircularDeterminate/> } >
         <Title
         mainTitle='War For Love'
         subTitle='New Single'
         />
+
         <Player
         tracks={Song}
         width='calc(7em + 40vw)'
         marginBottom='calc(1em + 5vw)'
         />
+
         <Grid container
         className="Section"
         id='News'
@@ -66,25 +69,30 @@ const News = () => {
             flexWrap: 'nowrap'
           }}
           >
-          {news.map((post, key) => (
-              <Grid item lg={1} md={1} xs={1} >
-                <CardItem
-                {...post} {...key}
-                minWidth='calc(16em + 7vw)'
-                backgroundColor='rgba(122, 102, 204, 0.7)'
-                justifyContent='start'
-                color='white'
-                fontWeight={500}
-                fontSize='calc(0.7em + 0.3vw)'
-                minHeight='30%'
-                />
+          {news.map(post => (
+            <Grid item 
+            lg={1} md={1} xs={1} 
+            key={post.title}
+            >
+              <CardItem
+              {...post}
+              minWidth='calc(16em + 7vw)'
+              backgroundColor='rgba(122, 102, 204, 0.7)'
+              justifyContent='start'
+              color='white'
+              fontWeight={500}
+              fontSize='calc(0.7em + 0.3vw)'
+              minHeight='30%'
+              />
+
             </Grid>
+
           ))}
           
           </Grid>
         </Grid>
       </Suspense>
-  </>
+    </>
   )
 }
 

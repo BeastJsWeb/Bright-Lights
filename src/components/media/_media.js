@@ -57,8 +57,11 @@ export default class Media extends Component {
         <Grid item 
         lg={3} xs={6} 
         >
-          {MediaLib.slice(0,1).map((post, key) => (
-            <CardItem {...post} {...key} />
+          {MediaLib.slice(0,1).map(post => (
+            <CardItem {...post} 
+            key={post.title + post.title2} 
+            />
+
           ))}
 
         </Grid>
@@ -70,30 +73,43 @@ export default class Media extends Component {
           order: {lg: 0, md: -1, sm: -1, xs: -1}
         }}
         >
-          {MediaLib.slice(1,3).map((post, key) => (
-            <Grid item container sm={6} xs={12}
+          {MediaLib.slice(1,3).map(post => (
+            <Grid item container 
+            sm={6} xs={12}
             flexGrow={1} 
+            key={post.title + post.title2} 
             >
-              <CardItem {...post} {...key} />
+              <CardItem {...post} />
+
             </Grid>
+
           ))}
-          {MediaLib.slice(3,4).map((post, key) => (
+          
             <Grid item
             flexGrow={1} 
             >
-              <CardItem {...post} {...key} />
+              {MediaLib.slice(3,4).map(post => (
+                <CardItem {...post}
+                key={post.title + post.title2}  
+                />
+
+              ))}
+
             </Grid>
-          ))}
 
         </Grid>
 
-          {MediaLib.slice(4,5).map((post, key) => (
-            <Grid item 
-            lg={3} xs={6}
-            >
-              <CardItem {...post} {...key} />
-            </Grid>
-          ))}
+          <Grid item 
+          lg={3} xs={6}
+          >
+            {MediaLib.slice(4,5).map(post => (
+              <CardItem {...post} 
+              key={post.title + post.title2}  
+              />
+              
+            ))}
+            
+          </Grid>
           
       </Grid>
     )

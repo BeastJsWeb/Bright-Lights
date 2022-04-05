@@ -7,6 +7,7 @@ const Hashtag = ({ iconAboutSong, iconTitleAboutSong }) => {
       {iconTitleAboutSong.map(iconTitle => (
         <Grid 
         item lg={6} xs={6} 
+        key={iconTitle}
         display='flex' 
         >
           <img

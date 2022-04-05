@@ -4,7 +4,6 @@ import { CardMedia, Typography, CardActionArea } from '@mui/material';
 export default class CardItem extends Component {
   render() {
     const { 
-      key,
       image, jpg,
       title, 
       title2, 
@@ -19,8 +18,7 @@ export default class CardItem extends Component {
     } = this.props
 
     return (
-      <CardActionArea
-      key={title + key}
+      <CardActionArea 
       sx={{
         minWidth: {minWidth},
         '& > *' : {

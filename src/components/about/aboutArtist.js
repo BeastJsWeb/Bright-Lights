@@ -23,7 +23,7 @@ const AboutArtist = ({
           borderBottomRightRadius: '2em 2em',
         }}
         >
-          <Grid item 
+          <Grid item
           lg={7} xs={12}
           pr={{ lg: '4.5vw', xs: '20px'}}
           pl={{ lg: '80px', xs: '20px'}}

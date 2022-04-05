@@ -1,11 +1,10 @@
 import React from "react"
 import { Grid, Typography } from "@mui/material";
 
-export default function Management ({ key, Managment, Email }) {
+const Management = ({ Managment, Email }) => {
   return (
     <>
       <Grid item
-      key={Managment + key}
       xl={5.65} lg={5.5} md={5.4} sm={5.1} xs={12}
       textAlign={{ 
         sm: 'end', xs: 'center' 
@@ -58,3 +57,5 @@ export default function Management ({ key, Managment, Email }) {
     </>
   )
 }
+
+export default Management
