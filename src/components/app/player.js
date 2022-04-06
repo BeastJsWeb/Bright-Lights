@@ -105,6 +105,7 @@ const Player = ({
         lg={lgTimer} 
         >
           <Typography
+          component='div'
           display='flex'
           color="white"
           fontSize='calc(0.7em + 0.3vw)'

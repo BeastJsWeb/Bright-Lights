@@ -14,8 +14,12 @@ function App() {
   return (
     <>
       <Preloader/>
-      <Header />
-      <Suspense fallback={<CircularDeterminate/>} >
+
+      <Header/>
+
+      <Suspense 
+      fallback={ <CircularDeterminate/> } 
+      >
         <Container
         maxWidth='false' 
         sx={{
@@ -26,12 +30,19 @@ function App() {
         }}
         >
           <News/>
+
           <About/>
+
           <Music/>
+
           <Media/>
+
           <Tours/>
+
         </Container>
+
         <Contacts/>
+
       </Suspense>
     </>
   )

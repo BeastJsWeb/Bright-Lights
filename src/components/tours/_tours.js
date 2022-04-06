@@ -86,7 +86,8 @@ export default class Tours extends Component {
       id='Tours'
       width={{ sm: '103%', xs: '85%' }} 
       ml={{ sm: '-0.9vw', xs: '7%' }} 
-      mt='9vw' mb='9vw'
+      mt='calc(2em + 8vw)' 
+      mb='calc(2em + 8vw)'
       >
         <Slider {...settings} >
           {toursData.map(tour => (

@@ -2,13 +2,16 @@ import React from "react";
 import { 
   Box, 
   IconButton,
-  MenuItem,
-  Typography, 
+  MenuItem, 
   SwipeableDrawer
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import HandleClick from "./HandleClick";
 
-const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) => {
+const NavMenu = ({ headerPages, onClick, onOpen, onClose, open, onClickNavBtn }) => {
+  
+  
+
   return (
     <Box 
     position='fixed' 
@@ -21,19 +24,23 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
       mb: 2
     }}
     >
-      <IconButton active
+      <IconButton 
+      active='true'
       size="large"
       aria-controls="menu-appbar"
       aria-haspopup="listbox"
-      onClick={openNavMenu}
+      onClick={onClick}
       sx={{color: 'white', opacity: 0.5 }}
       >
         <MenuIcon/>
+
       </IconButton>
+
         <SwipeableDrawer
         anchor='top'
-        open={Boolean(openNavMenuCheck)}
-        onClose={closeNavMenu}
+        open={open}
+        onClose={onClose}
+        onOpen={onOpen}
         sx={{ background: 'rgba(0, 0, 0, 0.4)' }}
         PaperProps={{
           sx: {
@@ -43,11 +50,17 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
           }
         }}
         >
-          {headerPages.map((page, key) => (
+          {headerPages.map(page => (
             <MenuItem 
-            key={page + key} 
+            onClick={HandleClick}
+            id={page}
+            key={page} 
             sx={{
+              fontFamily: 'Poppins',
+              fontSize: 'calc(1em + 2vw)',
+              fontWeight: 500,
               color: "white",
+              pl: '5%',
               borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
               borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
               '&:active' : {
@@ -63,8 +76,7 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
                 height: '100%',
                 background: 'rgba(255,255,255,0.3)',
                 transition: 'all 0.3s ease',
-                opacity: 0,
-                
+                opacity: 0
               },
               '&:hover:before' : {
                 width: '100%',
@@ -74,15 +86,12 @@ const NavMenu = ({ headerPages, openNavMenu, closeNavMenu, openNavMenuCheck }) =
               } 
             }} 
             >
-              <Typography
-              variant="h4"
-              textAlign="center"
-              fontFamily='Poppins'
-              >
-                {page}
-              </Typography>
+              {page}
+              
             </MenuItem>
-            ))}
+
+          ))}
+
         </SwipeableDrawer>
     </Box>
   )

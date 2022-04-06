@@ -6,9 +6,7 @@ const Management = ({ Managment, Email }) => {
     <>
       <Grid item
       xl={5.65} lg={5.5} md={5.4} sm={5.1} xs={12}
-      textAlign={{ 
-        sm: 'end', xs: 'center' 
-      }}
+      textAlign={{ sm: 'end', xs: 'center' }}
       >
         <Typography
         fontFamily='Poppins'

@@ -1,19 +1,8 @@
 import React from "react";
 import { Box, Button } from '@mui/material';
+import HandleClick from "./HandleClick";
 
 const HeaderDesktop = ({headerPages}) => {
-  const handleClick = (event) => {
-    document.querySelectorAll(
-      ".Section"
-    ).forEach(section => {
-      if (section.id === event.target.id)
-      section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-      })
-    })
-  }
-
   return (
     <Box 
     sx={{ 
@@ -31,7 +20,7 @@ const HeaderDesktop = ({headerPages}) => {
         <Button
         key={page}
         id={page}
-        onClick={handleClick} 
+        onClick={HandleClick} 
         sx={{ 
           color: 'white', 
           textTransform: 'none', 

@@ -83,6 +83,7 @@ const Music = () => {
           <Grid item
           lg={2} xs={2}
           mt='calc(0.1em + 0.8vw)'
+          mb={{ lg: 0, md:-3, sm: -10, xs: -8 }}
           >
             <Player 
             lg={7.5} xs={8} 
@@ -102,9 +103,7 @@ const Music = () => {
           <Grid item container
           lg={2} xs={2}
           >
-            <FollowUs
-            musicServiсes={musicServiсes}
-            />
+            <FollowUs musicServiсes={musicServiсes} />
 
           </Grid>
 

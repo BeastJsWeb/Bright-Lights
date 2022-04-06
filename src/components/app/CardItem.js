@@ -18,6 +18,7 @@ export default class CardItem extends Component {
     } = this.props
 
     return (
+      
       <CardActionArea 
       sx={{
         minWidth: {minWidth},
@@ -72,7 +73,9 @@ export default class CardItem extends Component {
         }}
         >
           {title}<br/>{title2}
+
         </Typography>
+
         <CardMedia
         component='img'
         loading='lazy'
@@ -95,6 +98,7 @@ export default class CardItem extends Component {
           }
         }}
         />
+
       </CardActionArea>
     )
   }

@@ -14,7 +14,7 @@ const FollowUs = ({ musicServiсes }) => {
       >
         Follow me:
       </Typography>
-      <Stack container 
+      <Stack 
       direction='row' 
       alignItems='center'
       spacing={3} 

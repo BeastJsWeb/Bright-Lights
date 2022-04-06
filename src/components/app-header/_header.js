@@ -13,14 +13,9 @@ import Logo from "../app/logo";
 const pages = ['About', 'News', 'Music', 'Media', 'Tours', 'Contacts'];
 
 const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget)
-  }
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const [open, setOpen] = React.useState(false)
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
   }
 
   return (
@@ -45,9 +40,11 @@ const Header = () => {
 
           <NavMenu
           headerPages={pages}
-          openNavMenu={handleOpenNavMenu}
-          closeNavMenu={handleCloseNavMenu}
-          openNavMenuCheck={anchorElNav}
+          onClick={toggleDrawer(true)}
+          onOpen={toggleDrawer(true)}
+          onClose={toggleDrawer(false)}
+          open={open}
+          onClickNavBtn={toggleDrawer(false)}
           />
 
           <HeaderDesktop

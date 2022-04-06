@@ -11,7 +11,6 @@ const AboutArtist = ({
     <>
       <Box minHeight={500} >
         <Grid container
-        lg={12} xs={12}
         mt='calc(1em + 11.5vw)'
         pb='calc(1em + 1.6vw)'
         pt='calc(1em + 1.6vw)'
@@ -55,9 +54,13 @@ const AboutArtist = ({
                 zIndex: -1,
               }}
               />
+
               {textAboutArtist}
+
             </Typography>
+
             <Typography
+            component='div'
             color='#7A66CC'
             fontSize='calc(0.8em + 0.25vw)'
             fontWeight={700}
@@ -65,17 +68,21 @@ const AboutArtist = ({
             fontFamily='Poppins'
             pt='calc(0.5em + 0.8vw)'
             >
-              <Box display='inline' 
+              <Box 
+              display='inline' 
               sx={{
-              cursor: 'pointer',
-              '&:hover' : {
-                color: '#7A76CC'
-              }
+                cursor: 'pointer',
+                '&:hover' : {
+                  color: '#7A76CC'
+                }
               }} 
               >
                 {linkSiteText}
+
               </Box>
+
             </Typography>
+
           </Grid>
 
           <Grid item
@@ -103,7 +110,9 @@ const AboutArtist = ({
               ml: 2
             }}
             />
+
           </Grid>
+
         </Grid>
       </Box>
     </>
