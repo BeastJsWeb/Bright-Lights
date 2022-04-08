@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useEffect, useState} from "react";
 import { 
   Box, 
   IconButton,
@@ -8,11 +8,23 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import HandleClick from "./HandleClick";
 
-const NavMenu = ({ headerPages, onClick, onOpen, onClose, open, onClickNavBtn }) => {
-  
-  
+const NavMenu = ({ headerPages }) => {
+
+  const [open, setOpen] = useState(false)
+  const toggleDrawer = newOpen => () => {
+    setOpen(newOpen)
+  }
+
+  const menuRef = useRef()
+  useEffect(() => {
+    window.addEventListener('click', HandleClick, menuRef)
+    return () => {
+      window.removeEventListener('click', HandleClick, menuRef)
+    }
+  })
 
   return (
+
     <Box 
     position='fixed' 
     right={10}
@@ -29,7 +41,7 @@ const NavMenu = ({ headerPages, onClick, onOpen, onClose, open, onClickNavBtn })
       size="large"
       aria-controls="menu-appbar"
       aria-haspopup="listbox"
-      onClick={onClick}
+      onClick={toggleDrawer(true)}
       sx={{color: 'white', opacity: 0.5 }}
       >
         <MenuIcon/>
@@ -37,12 +49,14 @@ const NavMenu = ({ headerPages, onClick, onOpen, onClose, open, onClickNavBtn })
       </IconButton>
 
         <SwipeableDrawer
+        ref={menuRef}
         anchor='top'
         open={open}
-        onClose={onClose}
-        onOpen={onOpen}
+        onOpen={toggleDrawer(true)}
+        onClose={toggleDrawer(false)}
         sx={{ background: 'rgba(0, 0, 0, 0.4)' }}
         PaperProps={{
+          id: "Swipe",
           sx: {
             backgroundColor: 'rgba(0, 0, 0, 0.4)',
             height: 'auto%',
@@ -52,7 +66,7 @@ const NavMenu = ({ headerPages, onClick, onOpen, onClose, open, onClickNavBtn })
         >
           {headerPages.map(page => (
             <MenuItem 
-            onClick={HandleClick}
+            onClick={toggleDrawer(false)}
             id={page}
             key={page} 
             sx={{

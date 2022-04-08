@@ -13,10 +13,6 @@ import Logo from "../app/logo";
 const pages = ['About', 'News', 'Music', 'Media', 'Tours', 'Contacts'];
 
 const Header = () => {
-  const [open, setOpen] = React.useState(false)
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
-  }
 
   return (
     <AppBar
@@ -31,28 +27,21 @@ const Header = () => {
       color="transparent" 
       position="static"
       >
-
       <Container sx={{ dispaly: 'flex' }} >
         <Toolbar disableGutters >
           <Box>
             <Logo image={mainLogo} />
+
           </Box>
 
-          <NavMenu
-          headerPages={pages}
-          onClick={toggleDrawer(true)}
-          onOpen={toggleDrawer(true)}
-          onClose={toggleDrawer(false)}
-          open={open}
-          onClickNavBtn={toggleDrawer(false)}
-          />
+          <NavMenu headerPages={pages} />
 
-          <HeaderDesktop
-          headerPages={pages}
-          />
+          <HeaderDesktop headerPages={pages} />
           
         </Toolbar>
+
       </Container>
+
     </AppBar>
   )
 }
