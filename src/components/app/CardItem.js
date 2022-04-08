@@ -23,8 +23,8 @@ export default class CardItem extends Component {
       sx={{
         minWidth: {minWidth},
         '& > *' : {
-          borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
-          borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
+          borderTopLeftRadius: '15%',
+          borderBottomRightRadius: '15%',
           transition: { 
             md: 'all 0.2s ease 0.05s', 
             xs: 'none' 
@@ -59,7 +59,7 @@ export default class CardItem extends Component {
           minHeight: {minHeight},
           backgroundColor: {backgroundColor},
           borderTopLeftRadius: '0em',
-          borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
+          borderBottomRightRadius: 'calc(3.2em)',
           fontSize: {fontSize},
           zIndex: 1,
           '&:hover' : {

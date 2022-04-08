@@ -14,12 +14,12 @@ const TourCard = ({ image, jpg, location, label, date }) => {
     <Card
     sx={{ 
       mr: '0.8vw', ml: '0.8vw',
-      borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
-      borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
+      borderTopLeftRadius: 'calc(1.8em + 1.7vw)',
+      borderBottomRightRadius: 'calc(1.8em + 1.7vw)',
       backgroundColor: '#2F2B2B',
       '& *' : {
-        borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
-        borderBottomRightRadius: 'calc(1.5em + 1.7vh)',
+        borderTopLeftRadius: 'calc(1.8em + 1.7vw)',
+        borderBottomRightRadius: 'calc(1.8em + 1.7vw)',
         color: 'white'
       }
     }}
@@ -94,7 +94,7 @@ const TourCard = ({ image, jpg, location, label, date }) => {
           p: '1rem',
           fontWeight: 700,
           fontSize: 'calc(0.7em + 0.2vw)',
-          borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
+          borderTopLeftRadius: 'calc(1.8em + 1.7vw)',
           '&:hover' : {
             backgroundColor: '#7A66CC',
             color: 'transparent'
@@ -109,7 +109,7 @@ const TourCard = ({ image, jpg, location, label, date }) => {
             background: 'rgba(255,255,255,0)',
             opacity: 0,
             transition: 'all 0.5s ease',
-            borderTopLeftRadius: 'calc(1.5em + 1.7vh)',
+            borderTopLeftRadius: 'calc(1.8em + 1.7vw)',
             color: 'transparent',
             alignItems: 'center'
           },
