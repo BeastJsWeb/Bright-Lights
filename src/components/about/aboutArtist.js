@@ -43,7 +43,8 @@ const AboutArtist = ({
               alt="image"
               image={bgImg}
               srcSet={` 
-                ${bgImg} 320w, 
+                ${bgImg} 320w,
+                ${bgImg} 1024w,
                 ${bgImg} 2560w, 
                 ${bgJpg}
               `}
@@ -97,7 +98,8 @@ const AboutArtist = ({
             alt="artistPhoto"
             image={img}
             srcSet={` 
-              ${img} 320w, 
+              ${img} 320w,
+              ${img} 1024w, 
               ${img} 2560w, 
               ${jpg}
             `}
@@ -106,8 +108,11 @@ const AboutArtist = ({
               zIndex: 1,
               borderTopLeftRadius: '2em 2em',
               borderBottomRightRadius: '2em 2em',
-              width: 'calc(15em + 6vw)',
-              ml: 2
+              width: {
+                sm: 'calc(15em + 6vw)', 
+                xs: '100%'
+              },
+              ml: {sm: 2.5, xs: 0}
             }}
             />
 

@@ -11,7 +11,6 @@ import group102 from '../../images/group1/02.webp';
 import group102r from '../../images/group1/02.jpg';
 import group103 from '../../images/group1/03.webp';
 import group103r from '../../images/group1/03.jpg';
-import Song from '../../media/01.mp3'
 const Player = lazy(() => import("../app/player"))
 const Title = lazy(() => import("./title"))
 const CardItem = lazy(() => import("../app/CardItem"))
@@ -39,7 +38,7 @@ const news = [
 const News = () => {
   return (
     <>
-      <Bground 
+      <Bground
       mobile={BGmob} 
       web={BGweb} 
       jpg={BGjpg} 
@@ -52,7 +51,6 @@ const News = () => {
         />
 
         <Player
-        tracks={Song}
         width='calc(7em + 40vw)'
         marginBottom='calc(1em + 5vw)'
         />

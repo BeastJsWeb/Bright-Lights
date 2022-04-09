@@ -84,7 +84,8 @@ export default class CardItem extends Component {
         alt={title}
         image={image}
         srcSet={` 
-          ${image} 320w, 
+          ${image} 320w,
+          ${image} 1024w, 
           ${image} 2560w, 
           ${jpg}
         `}

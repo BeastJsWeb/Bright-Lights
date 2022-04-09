@@ -23,7 +23,8 @@ const AboutSongImg = ({ img, jpg }) => {
       height={466}
       image={img}
       srcSet={` 
-        ${img} 320w, 
+        ${img} 320w,
+        ${img} 1024w, 
         ${img} 2560w, 
         ${jpg} 
       `}

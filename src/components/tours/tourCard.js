@@ -33,6 +33,7 @@ const TourCard = ({ image, jpg, location, label, date }) => {
         image={image}
         srcSet={` 
           ${image} 320w, 
+          ${image} 1024w,
           ${image} 2560w, 
           ${jpg}
         `}

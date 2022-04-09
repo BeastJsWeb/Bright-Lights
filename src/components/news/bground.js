@@ -8,6 +8,7 @@ const Bground = ({ mobile, web, jpg }) => {
     loading='eager'
     image={mobile}
     srcSet={`
+      ${mobile} 320w,
       ${mobile} 640w, 
       ${web} 2560w, 
       ${jpg}

@@ -30,7 +30,10 @@ const Music = () => {
     className="Section"
     id="Music"
     alignItems="center"
-    mt='calc(11.5em + 4vw)'
+    mt={{
+      sm: 'calc(11.5em + 4vw)',
+      xs: 'calc(1em + 68vw)'
+    }}
     >
       <Grid item
       lg={6} xs={12}
@@ -47,7 +50,8 @@ const Music = () => {
         alt={group301}
         image={group301}
         srcSet={` 
-          ${group301} 320w, 
+          ${group301} 320w,
+          ${group301} 1024w, 
           ${group301} 2560w, 
           ${group301jpg}
         `}
