@@ -1,5 +1,8 @@
 # Bright-Lights
-React JS + Material UI
+React JS + Material UI + functional.
+A website built with a Figma layout in React using MUI.
+The functionality is written in React, with the exception of the audio player.
+The work also used react.lazy, react.helmet, a set of images to support IE.
 
 link to layout: https://www.figma.com/file/Ho6ymCLLGaEqrFs2qfyL68/Templates-%2320.-More-on-Figma.info-(Copy)?node-id=1%3A4
 
