@@ -16,7 +16,12 @@ export default function CircularDeterminate() {
   }, []);
 
   return (
-    <Stack mt={2} direction='row' justifyContent='center' >
+    <Stack 
+    height='100vh' 
+    direction='row' 
+    justifyContent='center' 
+    alignItems='center' 
+    >
       <CircularProgress variant="determinate" value={progress} />
     </Stack>
   );

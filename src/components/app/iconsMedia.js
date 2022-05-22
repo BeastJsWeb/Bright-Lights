@@ -8,10 +8,13 @@ const IconsMedia = ({ image, label, width = 30, height = 30 }) => {
     disableTouchRipple
     sx={{
       textTransform: 'none',
+      borderRadius: '100%',
       p: 0,
+      '&:hover' : {
+        background: 'rgba(255,255,255, 0)',
+      },
       '&:hover button' : {
         background: 'rgba(255,255,255, 0.1)',
-        borderRadius: '100%'
       },
       '&:active button' : {
         background: 'rgba(122,102,204, 0.7)',
@@ -26,6 +29,7 @@ const IconsMedia = ({ image, label, width = 30, height = 30 }) => {
         image={image}
         width={width}
         height={height}
+        
         />
 
       </IconButton>
