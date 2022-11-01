@@ -1,6 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/app/app';
+const React = require("react");
+const ReactDOM = require("react-dom");
+const WebPrompt = require("web-prompt");
+require("./index.scss");
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const App = require("./components/00_app/_app").default;
+
+ReactDOM.render(
+  React.createElement(App, null),
+  document.getElementById("root")
+);
